@@ -1,0 +1,107 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * 项目  dzah-util 
+ * 创建时间  2015-6-21 下午2:19:16 
+ * Copyright (c) 2015, wchhuangya All rights reserved.
+ * wchhuangya 专有/保密源代码,未经许可禁止任何人通过任何* 渠道使用、修改源代码.
+ */
+
+/**
+ * 类名: TimeHelper <br/> 
+ * 功能:  <br/> 
+ * 创建日期: 2015-6-21 下午2:19:16 <br/> 
+ *
+ * @author wchya
+ * @since Jdk 1.6
+ * @see       
+ *
+ */
+public class TimeHelper {
+
+	/**
+	 * getDateStringForFormat:使用指定日期格式获取当前时间. <br/> 
+	 * 
+	 * @author wchya 
+	 * @param format-日期格式
+	 * @return
+	 */
+	public static String getDateStringForFormat(String format){
+		SimpleDateFormat sdf = new SimpleDateFormat(format);
+		return sdf.format(new Date());
+	}
+	/**
+	 * getCurrentDate:获取当前日期时间，格式：yyyy-MM-dd HH:mm:ss. <br/> 
+	 * 
+	 * @author wchya 
+	 * @return
+	 */
+	public static String getCurrentDate(){
+		return getDateStringForFormat("yyyy-MM-dd HH:mm:ss");
+	}
+	/**
+	 * getCurrentYear:获取当前年份. <br/> 
+	 * 
+	 * @author wchya 
+	 * @param model-模型。0：2位年份；1：4位年份；
+	 * @return
+	 */
+	public static String getCurrentYear(int model){
+		return getDateStringForFormat(model == 0 ? "yy" : "yyyy");
+	}
+	/**
+	 * getCurrentYear:获取当前月份. <br/> 
+	 * 
+	 * @author wchya 
+	 * @param model-模型。<br/>0：不带前导0；<br/>1：带前导0；
+	 * @return
+	 */
+	public static String getCurrentMonth(int model){
+		return getDateStringForFormat(model == 0 ? "M" : "MM");
+	}
+	/**
+	 * getCurrentYear:获取当前日. <br/> 
+	 * 
+	 * @author wchya 
+	 * @param model-模型。<br/>0：不带前导0；<br/>1：带前导0；
+	 * @return
+	 */
+	public static String getCurrentDay(int model){
+		return getDateStringForFormat(model == 0 ? "d" : "dd");
+	}
+	/**
+	 * getCurrentHour:获取当前小时. <br/> 
+	 * 
+	 * @author wchya 
+	 * @param model-模型。<br/>0：12进制，不带前导0；<br/>1：12进制，带前导0；<br/>2：24进制，不带前导0；<br/>3：24进制，带前导0；
+	 * @return
+	 */
+	public static String getCurrentHour(int model){
+		return getDateStringForFormat(model == 0 ? "h" : (model == 1 ? "hh" : (model == 2 ? "H" : "HH")));
+	}
+	/**
+	 * getCurrentMinute:获取当前分钟. <br/> 
+	 * 
+	 * @author wchya 
+	 * @param model-模型。0：不带前导0；1：带前导0；
+	 * @return
+	 */
+	public static String getCurrentMinute(int model){
+		return getDateStringForFormat(model == 0 ? "m" : "mm");
+	}
+	/**
+	 * getCurrentSecond:获取当前秒. <br/> 
+	 * 
+	 * @author wchya 
+	 * @param model-模型。0：不带前导0；1：带前导0；
+	 * @return
+	 */
+	public static String getCurrentSecond(int model){
+		return getDateStringForFormat(model == 0 ? "s" : "ss");
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(getCurrentHour(0));
+	}
+}
