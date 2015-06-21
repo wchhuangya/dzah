@@ -160,3 +160,26 @@ java.io.IOException: Server returned status code 403: Forbidden
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) ~[na:1.6.0_13]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) ~[na:1.6.0_13]
 	at java.lang.Thread.run(Thread.java:619) ~[na:1.6.0_13]
+2015-06-21 12:28:14,670 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 12:28:14,979 [Worker-6] ERROR org.eclipse.m2e.core.MavenPlugin - 
+org.eclipse.jdt.core.JavaModelException: dzah-parent does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2305) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1890) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1912) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.m2e.core.MavenResourceProcessor.doCheck(MavenResourceProcessor.java:94) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.MavenResourceProcessor.checkforOlderMaven(MavenResourceProcessor.java:69) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:84) [org.eclipse.m2e.core.ui_1.0.0.me201110311918.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstactCreateMavenProjectJob.runInWorkspace(AbstactCreateMavenProjectJob.java:49) [org.eclipse.m2e.core.ui_1.0.0.me201110311918.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38) [org.eclipse.core.resources_3.7.100.v20110510-0712.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+2015-06-21 12:28:15,466 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 12:29:11,390 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 12:29:26,331 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 12:33:52,985 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 12:49:20,175 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 13:09:15,073 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 13:10:43,215 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 13:10:56,759 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 13:11:30,679 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-21 13:12:17,331 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
