@@ -40,6 +40,15 @@
             <groupId>org.springframework.mobile</groupId>
             <artifactId>spring-mobile-device</artifactId>
         </dependency>
+	    <dependency><!-- 为应用提供基本的认证以及其他高级的安全特性 -->
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-security</artifactId>
+	    </dependency>
+	    <dependency><!-- Lightweight Directory Access Protocol -->
+	        <groupId>org.springframework.security</groupId>
+	        <artifactId>spring-security-ldap</artifactId>
+	    </dependency>
+	    
         <dependency><!-- 用于从URL获取json数据，并转化为自定义的对象 -->
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -54,6 +63,11 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
         </dependency>
+	    <dependency><!-- Java Naming Directory Interface -->
+	        <groupId>org.apache.directory.server</groupId>
+	        <artifactId>apacheds-server-jndi</artifactId>
+	        <version>1.5.5</version>
+	    </dependency>
     </dependencies>
 
     <properties>
