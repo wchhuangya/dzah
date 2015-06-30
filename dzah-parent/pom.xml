@@ -11,33 +11,31 @@
 	<description>dzah项目的父工程</description>
 	
 	<properties>
-		<spring.version>4.1.6</spring.version>
+		<spring.version>4.1.5.RELEASE</spring.version>
 		<hibernate.version>4.3.10.Final</hibernate.version>
 		<mysql.version>5.1.35</mysql.version>
 		<jersey.version>2.6</jersey.version>
+		<!-- Plugin的属性定义 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
+	<developers>
+		<developer>
+			<id>wchhuangya</id>
+			<name>Wang chao</name>
+			<email>wchhuangyawork@163.com</email>
+			<organization>Free at all</organization>
+			<organizationUrl>http://www.cnblogs.com/wchhuangya</organizationUrl>
+		</developer>
+	</developers>
+	
+	<modules>
+		<module>../dzah-util</module>
+		<module>../dzah-core</module>
+	</modules>
 	
 	<dependencyManagement>
 		<dependencies>
-			
-			<!-- j2ee web spec -->
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>javax.servlet-api</artifactId>
-				<scope>provided</scope>
-				<version>3.0.1</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>jstl</artifactId>
-				<version>1.2</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.servlet.jsp</groupId>
-				<artifactId>jsp-api</artifactId>
-				<scope>provided</scope>
-				<version>2.1</version>
-			</dependency>
 			
 			<!-- j2ee web spec -->
 			<dependency>
@@ -128,6 +126,43 @@
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjweaver</artifactId>
 				<version>1.7.4</version>
+			</dependency>
+			
+			<!-- hibernate framework -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-osgi</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-envers</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-c3p0</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-proxool</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-infinispan</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-ehcache</artifactId>
+				<version>${hibernate.version}</version>
 			</dependency>
 			
 			<dependency>

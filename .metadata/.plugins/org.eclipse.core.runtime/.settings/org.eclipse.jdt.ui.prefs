@@ -1,29 +1,40 @@
-#Sun Jun 21 14:19:06 CST 2015
+#Fri Jun 26 17:55:50 CST 2015
 content_assist_proposals_foreground=0,0,0
-spelling_locale_initialized=true
-org.eclipse.pde.ui.ExternalPluginLibrariesFilter1=true
-org.eclipse.jdt.ui.text.templates_migrated=true
-useAnnotationsPrefPage=true
-lastRecentlyUsedFilters=org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*,
-eclipse.preferences.version=1
-org.eclipse.jface.textfont=1|Consolas|14.25|0|WINDOWS|1|-19|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
-tabWidthPropagated=true
-org.eclipse.jdt.ui.editor.tab.width=
-org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter=true
-fontPropagated=true
-org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter=true
 org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="gettercomment_context" deleted\="false" description\="Comment for getter method" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.gettercomment" name\="gettercomment">/** \r\n * ${bare_field_name}. \r\n * \r\n * @return  the ${bare_field_name} \r\n */  </template><template autoinsert\="false" context\="settercomment_context" deleted\="false" description\="Comment for setter method" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.settercomment" name\="settercomment">/** \r\n * ${param}. \r\n * \r\n * @param   ${param}    the ${bare_field_name} to set \r\n */  </template><template autoinsert\="false" context\="constructorcomment_context" deleted\="false" description\="Comment for created constructors" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.constructorcomment" name\="constructorcomment">/** \r\n * Creates a new instance of ${enclosing_type}. \r\n * \r\n * ${tags} \r\n */  </template><template autoinsert\="false" context\="filecomment_context" deleted\="false" description\="Comment for created Java files" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.filecomment" name\="filecomment">/** \r\n * Project Name\:${project_name} \r\n * File Name\:${file_name} \r\n * Package Name\:${package_name} \r\n * Date\:${date}${time} \r\n * Copyright (c) ${year}, wchhuangya All rights reserved.\r\n * \r\n */  </template><template autoinsert\="false" context\="typecomment_context" deleted\="false" description\="Comment for created types" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.typecomment" name\="typecomment">/** \r\n * \u7C7B\u540D\: ${type_name} &lt;br/&gt; \r\n * \u529F\u80FD\: . &lt;br/&gt; \r\n * \u521B\u5EFA\u65F6\u95F4\: ${date} ${time} &lt;br/&gt; \r\n * \r\n * @author ${user} \r\n * @version ${enclosing_type}${tags} \r\n * @since Jdk 1.6 \r\n */  </template><template autoinsert\="false" context\="fieldcomment_context" deleted\="false" description\="Comment for fields" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.fieldcomment" name\="fieldcomment">/** \r\n * ${field} \:  \r\n */</template><template autoinsert\="false" context\="methodcomment_context" deleted\="false" description\="Comment for non-overriding methods" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.methodcomment" name\="methodcomment">/** ${enclosing_method}\:. &lt;br/&gt; \r\n * \r\n * @author ${user} \r\n * ${tags} \r\n */  </template><template autoinsert\="false" context\="overridecomment_context" deleted\="false" description\="Comment for overriding methods" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.overridecomment" name\="overridecomment">/** \r\n *  \r\n * ${see_to_overridden} \r\n */  </template><template autoinsert\="false" context\="delegatecomment_context" deleted\="false" description\="Comment for delegate methods" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.delegatecomment" name\="delegatecomment">/** \r\n * ${tags} \r\n * ${see_to_target} \r\n */  </template><template autoinsert\="false" context\="newtype_context" deleted\="false" description\="Newly created files" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.newtype" name\="newtype">/**\r\n * \u9879\u76EE  ${project_name} \r\n * \u521B\u5EFA\u65F6\u95F4  ${date} ${time} \r\n * Copyright (c) ${year}, wchhuangya All rights reserved.\r\n * wchhuangya \u4E13\u6709/\u4FDD\u5BC6\u6E90\u4EE3\u7801,\u672A\u7ECF\u8BB8\u53EF\u7981\u6B62\u4EFB\u4F55\u4EBA\u901A\u8FC7\u4EFB\u4F55* \u6E20\u9053\u4F7F\u7528\u3001\u4FEE\u6539\u6E90\u4EE3\u7801.\r\n */\r\n${filecomment}\r\n\r\n${package_declaration}\r\n\r\n\r\n/**\r\n * \u7C7B\u540D\: ${type_name} &lt;br/&gt; \r\n * \u529F\u80FD\:  &lt;br/&gt; \r\n * \u521B\u5EFA\u65E5\u671F\: ${date} ${time} &lt;br/&gt; \r\n *\r\n * @author ${user}\r\n * @since Jdk 1.6\r\n * @see       \r\n *\r\n */\r\n${typecomment}\r\n${type_declaration}</template><template autoinsert\="false" context\="catchblock_context" deleted\="false" description\="Code in new catch blocks" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.catchblock" name\="catchblock">${exception_var}.printStackTrace();</template><template autoinsert\="false" context\="constructorbody_context" deleted\="false" description\="Code in created constructor stubs" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.constructorbody" name\="constructorbody">${body_statement}</template></templates>
-org.eclipse.jdt.ui.javadoclocations.migrated=true
-content_assist_autoactivation_triggers_java=.abcdefghijklmnopqrstuvwxyz(
-proposalOrderMigrated=true
-org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter=true
-org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter=true
 content_assist_proposals_background=255,255,255
-org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter=true
-org.eclipse.jdt.ui.formatterprofiles.version=12
-content_assist_number_of_computers=17
-org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter=true
+spelling_ignore_digits=true
 useQuickDiffPrefPage=true
+lastRecentlyUsedFilters=org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*,
+spelling_ignore_upper=true
+content_assist_number_of_computers=17
 CustomFiltersActionGroup.org.eclipse.jdt.ui.PackageExplorer.TAG_DUMMY_TO_TEST_EXISTENCE=storedViewPreferences
-org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+content_assist_autoactivation_triggers_java=.abcdefghijklmnopqrstuvwxyz(
+useAnnotationsPrefPage=true
+spelling_ignore_single_letters=true
+org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter=true
+spelling_ignore_urls=true
+org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter=true
+org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter=true
+spelling_locale_initialized=true
+org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter=true
+fontPropagated=true
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter=true
 org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Consolas|14.25|0|WINDOWS|1|-19|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
+spelling_ignore_non_letters=true
+tabWidthPropagated=true
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.text.DateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.Format"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.text.SimpleDateFormat"/><rhs name\="java.util.Date"/></lhs><lhs name\="java.text.SimpleDateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.util.concurrent.atomic.AtomicLong"/></lhs><lhs name\="java.util.concurrent.atomic.AtomicLong"><rhs name\="java.util.concurrent.atomic.AtomicLong"/></lhs><lhs name\="hello.Greeting"><rhs name\="hello.Greeting"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="hello.Customer"><rhs name\="hello.Customer"/></lhs><lhs name\="java.lang.Enum"><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/></lhs></history>
+spelling_ignore_java_strings=true
+spelling_ignore_mixed=true
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.pde.ui.ExternalPluginLibrariesFilter1=true
+proposalOrderMigrated=true
+spelling_ignore_ampersand_in_properties=true
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+spelling_user_dictionary_encoding=GBK
+spelling_ignore_sentence=true
+org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter=true
