@@ -1,12 +1,4 @@
 INDEX VERSION 1.126+D:\project\personal\myeclipse\git\dzah\.metadata\.plugins\org.eclipse.jdt.core
-4099450243.index
 1018302183.index
 1958322866.index
-298494177.index
 3216935990.index
-1342568175.index
-3780247920.index
-1088548169.index
-1827629615.index
-2281149005.index
-6624348.index
