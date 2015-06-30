@@ -11,6 +11,7 @@
 	<description>dzah项目的父工程</description>
 	
 	<properties>
+<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/f2/e0390716be1e00151ae8ae63886554fe
 		<spring.version>4.1.5.RELEASE</spring.version>
 		<hibernate.version>4.3.10.Final</hibernate.version>
 		<mysql.version>5.1.35</mysql.version>
@@ -34,6 +35,14 @@
 		<module>../dzah-core</module>
 	</modules>
 	
+=======
+		<spring.version>4.1.6</spring.version>
+		<hibernate.version>4.3.10.Final</hibernate.version>
+		<mysql.version>5.1.35</mysql.version>
+		<jersey.version>2.6</jersey.version>
+	</properties>
+	
+>>>>>>> parent of a79d8c4... 提交实体项目；:dzah-parent/pom.xml
 	<dependencyManagement>
 		<dependencies>
 			
@@ -56,6 +65,28 @@
 				<version>2.1</version>
 			</dependency>
 			
+<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/f2/e0390716be1e00151ae8ae63886554fe
+=======
+			<!-- j2ee web spec -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<scope>provided</scope>
+				<version>3.0.1</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jstl</artifactId>
+				<version>1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet.jsp</groupId>
+				<artifactId>jsp-api</artifactId>
+				<scope>provided</scope>
+				<version>2.1</version>
+			</dependency>
+			
+>>>>>>> parent of a79d8c4... 提交实体项目；:dzah-parent/pom.xml
 			<!-- spring framework -->
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -128,6 +159,7 @@
 				<version>1.7.4</version>
 			</dependency>
 			
+<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/f2/e0390716be1e00151ae8ae63886554fe
 			<!-- hibernate framework -->
 			<dependency>
 				<groupId>org.hibernate</groupId>
@@ -165,6 +197,8 @@
 				<version>${hibernate.version}</version>
 			</dependency>
 			
+=======
+>>>>>>> parent of a79d8c4... 提交实体项目；:dzah-parent/pom.xml
 			<dependency>
 				<groupId>ognl</groupId>
 				<artifactId>ognl</artifactId>

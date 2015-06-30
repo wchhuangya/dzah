@@ -15,20 +15,4 @@
         <url>jdbc:derby://localhost:1527/myeclipse</url>
         <userName>classiccars</userName>
     </Bean>
-    <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
-        <activate>false</activate>
-        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
-            <string>-474a9bca:14e14523273:-7f72</string>
-        </driverIdentifier>
-        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
-            <string>-474a9bca:14e14523273:-7f95</string>
-        </identifier>
-        <name>com.mysql.jdbc.Driver</name>
-        <password encryption="true">joVC3+rSIRjitXdB5wsHxA==</password>
-        <promptForPassword>false</promptForPassword>
-        <schema Indexed="true"/>
-        <schemaDisplayPolicy>0</schemaDisplayPolicy>
-        <url>jdbc:mysql://localhost:3306/dzah</url>
-        <userName>root</userName>
-    </Bean>
 </Beans>
