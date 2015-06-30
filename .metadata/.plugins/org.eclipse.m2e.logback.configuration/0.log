@@ -5042,3 +5042,152 @@ java.io.IOException: Server returned status code 403: Forbidden
 2015-06-30 08:10:53,316 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2015-06-30 08:10:53,318 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-06-30 08:10:53,319 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2015-06-30 08:22:27,056 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-30 08:22:27,472 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-util:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-util\pom.xml.
+2015-06-30 08:22:28,008 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:22:28,011 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:22:28,013 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:22:28,014 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:24:44,936 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-30 08:24:44,987 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-util:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-util\pom.xml.
+2015-06-30 08:24:45,038 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-entity:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-06-30 08:24:45,979 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/springframework/spring-jdbc/4.2.0.RC1/spring-jdbc-4.2.0.RC1.pom
+2015-06-30 08:24:46,007 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-jdbc:jar:4.2.0.RC1 is missing, no dependency information available
+2015-06-30 08:24:47,146 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/springframework/spring-jdbc/4.2.0.RC1/spring-jdbc-4.2.0.RC1.jar
+2015-06-30 08:24:48,521 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:24:48,522 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:24:48,523 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:24:48,524 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:24:49,713 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:24:49,748 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:24:49,750 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:24:49,750 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-06-30 08:25:55,136 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-parent:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-06-30 08:25:55,473 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-entity:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-06-30 08:25:57,084 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/snapshot/org/springframework/spring-jdbc/4.2.0.RC1/spring-jdbc-4.2.0.RC1.pom
+2015-06-30 08:25:57,638 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.spring.io/milestone/org/springframework/spring-jdbc/4.2.0.RC1/spring-jdbc-4.2.0.RC1.pom
+2015-06-30 08:25:57,648 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/milestone/org/springframework/spring-jdbc/4.2.0.RC1/spring-jdbc-4.2.0.RC1.pom
+2015-06-30 08:25:58,628 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/snapshot/org/springframework/spring-tx/4.2.0.RC1/spring-tx-4.2.0.RC1.pom
+2015-06-30 08:25:59,169 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.spring.io/milestone/org/springframework/spring-tx/4.2.0.RC1/spring-tx-4.2.0.RC1.pom
+2015-06-30 08:25:59,186 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/milestone/org/springframework/spring-tx/4.2.0.RC1/spring-tx-4.2.0.RC1.pom
+2015-06-30 08:26:00,134 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/snapshot/org/springframework/spring-jdbc/4.2.0.RC1/spring-jdbc-4.2.0.RC1.jar
+2015-06-30 08:26:00,456 [New I/O client worker #8-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/snapshot/org/springframework/spring-tx/4.2.0.RC1/spring-tx-4.2.0.RC1.jar
+2015-06-30 08:26:01,101 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.spring.io/milestone/org/springframework/spring-jdbc/4.2.0.RC1/spring-jdbc-4.2.0.RC1.jar
+2015-06-30 08:26:01,326 [New I/O client worker #9-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.spring.io/milestone/org/springframework/spring-tx/4.2.0.RC1/spring-tx-4.2.0.RC1.jar
+2015-06-30 08:26:03,519 [New I/O client worker #9-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/milestone/org/springframework/spring-tx/4.2.0.RC1/spring-tx-4.2.0.RC1.jar
+2015-06-30 08:26:05,514 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/milestone/org/springframework/spring-jdbc/4.2.0.RC1/spring-jdbc-4.2.0.RC1.jar
+2015-06-30 08:26:06,072 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya:dzah-util:0.0.1-SNAPSHOT @ D:\project\personal\myeclipse\git\dzah\dzah-util\pom.xml.
+2015-06-30 08:26:07,790 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.1.0 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-06-30 08:26:11,845 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:26:11,848 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-06-30 08:26:11,850 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-06-30 08:26:11,853 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:26:11,854 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:26:12,161 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:26:12,165 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:26:12,168 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:26:12,168 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:26:12,408 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:26:12,409 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-06-30 08:26:12,411 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-06-30 08:26:12,412 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-06-30 08:26:21,757 [Worker-21] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 7 problems were encountered while building the effective model for com.ch.wchhuangya:dzah-core:0.0.1-SNAPSHOT
+[ERROR] 'dependencies.dependency.version' for commons-codec:commons-codec:jar is missing. @ line 72, column 15
+[ERROR] 'dependencies.dependency.version' for commons-logging:commons-logging:jar is missing. @ line 76, column 15
+[ERROR] 'dependencies.dependency.version' for commons-io:commons-io:jar is missing. @ line 85, column 15
+[ERROR] 'dependencies.dependency.version' for commons-fileupload:commons-fileupload:jar is missing. @ line 89, column 15
+[ERROR] 'dependencies.dependency.version' for ch.qos.logback:logback-core:jar is missing. @ line 107, column 15
+[ERROR] 'dependencies.dependency.version' for org.easymock:easymock:jar is missing. @ line 117, column 15
+[ERROR] 'dependencies.dependency.version' for org.easymock:easymockclassextension:jar is missing. @ line 121, column 15
+ for project com.ch.wchhuangya:dzah-core:0.0.1-SNAPSHOT at D:\project\personal\myeclipse\git\dzah\dzah-core\pom.xml
+org.apache.maven.project.ProjectBuildingException: 7 problems were encountered while building the effective model for com.ch.wchhuangya:dzah-core:0.0.1-SNAPSHOT
+[ERROR] 'dependencies.dependency.version' for commons-codec:commons-codec:jar is missing. @ line 72, column 15
+[ERROR] 'dependencies.dependency.version' for commons-logging:commons-logging:jar is missing. @ line 76, column 15
+[ERROR] 'dependencies.dependency.version' for commons-io:commons-io:jar is missing. @ line 85, column 15
+[ERROR] 'dependencies.dependency.version' for commons-fileupload:commons-fileupload:jar is missing. @ line 89, column 15
+[ERROR] 'dependencies.dependency.version' for ch.qos.logback:logback-core:jar is missing. @ line 107, column 15
+[ERROR] 'dependencies.dependency.version' for org.easymock:easymock:jar is missing. @ line 117, column 15
+[ERROR] 'dependencies.dependency.version' for org.easymock:easymockclassextension:jar is missing. @ line 121, column 15
+ for project com.ch.wchhuangya:dzah-core:0.0.1-SNAPSHOT at D:\project\personal\myeclipse\git\dzah\dzah-core\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:139) ~[maven-core-3.0.2.jar:3.0.2]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:98) ~[maven-core-3.0.2.jar:3.0.2]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:527) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:746) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:167) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:70) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:276) [org.eclipse.m2e.core.ui_1.0.0.me201110311918.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:746) [org.eclipse.m2e.editor_1.0.0.me201109141806.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$7.run(MavenPomEditor.java:1063) [org.eclipse.m2e.editor_1.0.0.me201109141806.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 7 problems were encountered while building the effective model for com.ch.wchhuangya:dzah-core:0.0.1-SNAPSHOT
+[ERROR] 'dependencies.dependency.version' for commons-codec:commons-codec:jar is missing. @ line 72, column 15
+[ERROR] 'dependencies.dependency.version' for commons-logging:commons-logging:jar is missing. @ line 76, column 15
+[ERROR] 'dependencies.dependency.version' for commons-io:commons-io:jar is missing. @ line 85, column 15
+[ERROR] 'dependencies.dependency.version' for commons-fileupload:commons-fileupload:jar is missing. @ line 89, column 15
+[ERROR] 'dependencies.dependency.version' for ch.qos.logback:logback-core:jar is missing. @ line 107, column 15
+[ERROR] 'dependencies.dependency.version' for org.easymock:easymock:jar is missing. @ line 117, column 15
+[ERROR] 'dependencies.dependency.version' for org.easymock:easymockclassextension:jar is missing. @ line 121, column 15
+
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:422) ~[maven-model-builder-3.0.2.jar:3.0.2]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:374) ~[maven-model-builder-3.0.2.jar:3.0.2]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:365) ~[maven-model-builder-3.0.2.jar:3.0.2]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:232) ~[maven-model-builder-3.0.2.jar:3.0.2]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:135) ~[maven-core-3.0.2.jar:3.0.2]
+	... 9 common frames omitted
+2015-06-30 08:27:10,788 [Worker-22] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration TimeHelper references non-existing project dzah-util.
+org.eclipse.core.runtime.CoreException: Launch configuration TimeHelper references non-existing project dzah-util.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.0.v20110509.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1252) ~[org.eclipse.jdt.launching_3.6.0.v20110509.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+2015-06-30 08:27:10,789 [Worker-22] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration TimeHelper references non-existing project dzah-util.
+org.eclipse.core.runtime.CoreException: Launch configuration TimeHelper references non-existing project dzah-util.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.0.v20110509.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1252) ~[org.eclipse.jdt.launching_3.6.0.v20110509.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+2015-06-30 08:27:10,795 [Worker-22] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration TimeHelper references non-existing project dzah-util.
+org.eclipse.core.runtime.CoreException: Launch configuration TimeHelper references non-existing project dzah-util.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.0.v20110509.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1252) ~[org.eclipse.jdt.launching_3.6.0.v20110509.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2115) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:378) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:245) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.0.v20110518.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.0.me201110252317.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]

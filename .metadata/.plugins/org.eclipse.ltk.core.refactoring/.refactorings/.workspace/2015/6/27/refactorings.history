@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 5 resources" deleteContents="true" description="Delete 5 resources" element1="/dzah-core" element2="/dzah-entity" element3="/dzah-parent" element4="/dzah-spring" element5="/dzah-util" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="5" stamp="1435624029934"/>
+</session>
