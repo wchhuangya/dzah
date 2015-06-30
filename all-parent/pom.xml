@@ -42,6 +42,14 @@
 				<version>3.2.1</version>
 			</dependency>
 			
+			<!-- 用于在数据对象模型上使用注解来完成getter等方法的自动生成 -->
+	        <dependency>
+	            <groupId>org.projectlombok</groupId>
+	            <artifactId>lombok</artifactId>
+	            <version>1.16.4</version>
+	            <scope>provided</scope>
+	        </dependency>
+			
 		</dependencies>
 	</dependencyManagement>
 
