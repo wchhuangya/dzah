@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>dzah-parent</artifactId>
+		<groupId>com.ch.wchhuangya.dzah</groupId>
+		<version>0.0.1</version>
+	</parent>
+	
+	<artifactId>dzah-biz</artifactId>
+	<name>dzah-biz</name>
+	<description>大杂烩项目中处理业务的项目</description>
+	
+	<properties>
+		<java.version>1.7</java.version>
+	</properties>
+	
+	<dependencies>
+		
+		<!-- 项目依赖 -->
+		<dependency>
+			<groupId>com.ch.wchhuangya.dzah</groupId>
+			<artifactId>dzah-toolkit</artifactId>
+			<version>0.0.1</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>com.ch.wchhuangya.dzah</groupId>
+			<artifactId>dzah-entity</artifactId>
+			<version>0.0.1</version>
+			<type>jar</type>
+		</dependency>
+		
+		<!-- spring web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<!-- spring test -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+	</dependencies>
+	
+	<build />
+</project>

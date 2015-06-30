@@ -6,6 +6,7 @@
 		<artifactId>dzah-parent</artifactId>
 		<groupId>com.ch.wchhuangya.dzah</groupId>
 		<version>0.0.1</version>
+		<relativePath>../dzah-parent/pom.xml</relativePath>
 	</parent>
 	
 	<artifactId>dzah-toolkit</artifactId>
