@@ -3443,3 +3443,17 @@ org.xml.sax.SAXParseException: The markup in the document preceding the root ele
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2015-06-30 08:59:23.237
 !MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-06-30 09:03:29.990
+!MESSAGE 
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2015-06-30 09:03:31.039
+!MESSAGE Could not auto-share project all-parent
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘上“all-parent”项目的信息不相匹配。
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2015-06-30 09:03:31.039
+!MESSAGE 提供的 SVN 信息与磁盘上“all-parent”项目的信息不相匹配。
