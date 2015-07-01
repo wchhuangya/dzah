@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
-<fullyQualifiedTypeName name="org.springframework.dao.DataAccessException"/>
-<fullyQualifiedTypeName name="org.hibernate.criterion.Criterion"/>
-<fullyQualifiedTypeName name="org.hibernate.criterion.Restrictions"/>
-<fullyQualifiedTypeName name="org.hibernate.criterion.MatchMode"/>
-<fullyQualifiedTypeName name="com.ch.wchhuangya.dzah.util.Page"/>
-<fullyQualifiedTypeName name="org.springframework.orm.hibernate4.HibernateCallback"/>
-<fullyQualifiedTypeName name="org.hibernate.Session"/>
-<fullyQualifiedTypeName name="org.springframework.orm.hibernate4.HibernateExceptionTranslator"/>
-<fullyQualifiedTypeName name="hello.Greeting"/>
-<fullyQualifiedTypeName name="java.util.concurrent.atomic.AtomicLong"/>
-<fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
-<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
-<fullyQualifiedTypeName name="org.springframework.scheduling.annotation.EnableScheduling"/>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.Scheduled"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.springframework.mobile.device.Device"/>
 <fullyQualifiedTypeName name="java.lang.Long"/>
-<fullyQualifiedTypeName name="java.security.cert.TrustAnchor"/>
 <fullyQualifiedTypeName name="hello.Value"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
 <fullyQualifiedTypeName name="org.slf4j.Logger"/>
@@ -58,6 +39,25 @@
 <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter"/>
 <fullyQualifiedTypeName name="org.springframework.security.config.annotation.authentication.configurers.GlobalAuthenticationConfigurerAdapter"/>
 <fullyQualifiedTypeName name="org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
 <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
+<fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="com.jolbox.bonecp.BoneCPDataSource"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="org.springframework.boot.test.SpringApplicationConfiguration"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
+<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.transaction.TransactionConfiguration"/>
+<fullyQualifiedTypeName name="java.security.cert.TrustAnchor"/>
+<fullyQualifiedTypeName name="org.apache.commons.collections.functors.TruePredicate"/>
+<fullyQualifiedTypeName name="com.ch.wchhuangya.dzah.test.AbstractTest"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="com.ch.wchhuangya.dzah.Application"/>
 </qualifiedTypeNameHistroy>

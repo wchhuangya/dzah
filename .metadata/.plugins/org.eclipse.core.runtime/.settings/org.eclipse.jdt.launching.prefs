@@ -1,6 +1,7 @@
-#Tue Jun 30 15:47:32 CST 2015
+#Wed Jul 01 16:03:24 CST 2015
+org.eclipse.jdt.launching.PREF_DEFAULT_ENVIRONMENTS_XML=
 >>>>>>>=parent of a79d8c4... \u00E6\u008F\u0090\u00E4\u00BA\u00A4\u00E5\u00AE\u009E\u00E4\u00BD\u0093\u00E9\u00A1\u00B9\u00E7\u009B\u00AE\u00EF\u00BC\u009B
 eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1435633836893">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="pulse_com.sun.java.jdk.win32.x86_64_1.6.0.013" name\="Sun JDK 1.6.0_13" path\="D\:\\Program_Files\\MyEclipse\\Common\\binary\\com.sun.java.jdk.win32.x86_64_1.6.0.013"/>\r\n<vm id\="1435633771993" name\="jdk1.7.0_67" path\="C\:\\Program Files\\Java\\jdk1.7.0_67"/>\r\n<vm id\="1435633836893" name\="jdk1.6.0_45" path\="C\:\\Program Files\\Java\\jdk1.6.0_45"/>\r\n</vmType>\r\n</vmSettings>\r\n
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1435737755735">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="pulse_com.sun.java.jdk.win32.x86_64_1.6.0.013" name\="Sun JDK 1.6.0_13" path\="D\:\\Program_Files\\MyEclipse\\Common\\binary\\com.sun.java.jdk.win32.x86_64_1.6.0.013"/>\r\n<vm id\="1435633836893" name\="jdk1.6.0_45" path\="C\:\\Program Files\\Java\\jdk1.6.0_45"/>\r\n<vm id\="1435737755735" name\="jdk1.7.0_67" path\="C\:\\Program Files\\Java\\jdk1.7.0_67"/>\r\n</vmType>\r\n</vmSettings>\r\n
 <<<<<<<=HEAD
 =\=\=\=\=\=\=

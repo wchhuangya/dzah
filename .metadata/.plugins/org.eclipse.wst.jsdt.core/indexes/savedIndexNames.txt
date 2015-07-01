@@ -1,5 +1,1 @@
 INDEX VERSION 1.122+D:\project\personal\myeclipse\git\dzah\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2679732810.index
-3475328262.index
-2533673782.index
-1091340274.index

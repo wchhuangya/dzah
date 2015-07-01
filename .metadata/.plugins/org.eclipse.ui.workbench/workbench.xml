@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="57" version="2.0">
+<workbench progressCount="13" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="-59" y="80">
 <fastViewData fastViewLocation="1024"/>
@@ -27,15 +27,16 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.compare.CompareEditor" itemType="typePlaceholder" x="84" y="22"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.springframework.springconfigeditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -44,80 +45,81 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="application.properties" partName="application.properties" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/resources/application.properties" title="application.properties" tooltip="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/resources/application.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/dzah-biz/src/main/resources/application.properties"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoneCPConfig.java" partName="BoneCPConfig.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/BoneCPConfig.java" title="BoneCPConfig.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/BoneCPConfig.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/BoneCPConfig.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="518" selectionTopPixel="348"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractTestCase.java" partName="AbstractTestCase.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java" title="AbstractTestCase.java" tooltip="dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="576" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSysService.java" partName="TestSysService.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java" title="TestSysService.java" tooltip="dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="328" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="dzah-biz/pom.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/pom.xml" title="dzah-biz/pom.xml" tooltip="dzah-biz/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="dzah-parent/pom.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-parent/pom.xml" title="dzah-parent/pom.xml" tooltip="dzah-parent/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-parent/pom.xml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name=".classpath" partName=".classpath" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/.classpath" title=".classpath" tooltip="dzah-biz/.classpath" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/.classpath"/>
+</editor>
 </editors>
 <views>
-<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
-<viewState/>
-</view>
-<view id="com.genuitec.eclipse.sqlexplorer.views.SQLResultsView" partName="SQL Results">
-<viewState/>
-</view>
 <view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser">
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Type Hierarchy">
 <viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" input="=dzah-spring" link_editors="0" mv_vertical_scroll="0" orientation="3" qualified_names="0" ratio="350" selection="=dzah-spring/C:\/Program Files\/Java\/jdk1.6.0_45\/jre\/lib\/rt.jar&lt;java.lang(Object.class[Object" showinherited="false" sortbydefiningtype="false" vertical_scroll="0" view="2" workingSetName=""/>
 </view>
-<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
-<viewState/>
-</view>
-<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
-<viewState isPinned="false">
-<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
-<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
-</viewState>
-</view>
-<view id="com.genuitec.eclipse.sqlexplorer.views.TableInfoView" partName="Table/Object Info">
-<viewState/>
-</view>
 <view id="org.eclipse.egit.ui.RepositoriesView" partName="Git Repositories">
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
-</view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
-<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="353" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
-</viewState>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 <view id="com.genuitec.eclipse.sqlexplorer.views.ConnectionInfo" partName="DB Connection Info"/>
-<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" partName="Spring Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.springframework.ide.eclipse.ui.navigator.workingsets.showTopLevelWorkingSets="0"/>
-</view>
 <view id="com.genuitec.org.hibernate.eclipse.console.views.QueryPageTabView" partName="Hibernate Query Result">
 <viewState/>
 </view>
-<view id="com.genuitec.eclipse.ast.deploy.core.serverview" partName="Servers">
-<viewState/>
+<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" partName="Spring Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.springframework.ide.eclipse.ui.navigator.workingsets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
-<view id="com.genuitec.eclipse.sqlexplorer.views.SQLHistoryView" partName="SQL History"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (2 items)"/>
+<category IMemento.internal.id="Errors (2 items)"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="676"/>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="772"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="1" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -152,22 +154,56 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<view id="com.genuitec.eclipse.sqlexplorer.views.DatabaseView" partName="DB Browser">
 <viewState/>
 </view>
-<view id="com.genuitec.eclipse.sqlexplorer.views.DatabaseView" partName="DB Browser">
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="com.genuitec.eclipse.sqlexplorer.views.SQLResultsView" partName="SQL Results">
+<viewState/>
+</view>
+<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
+<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
+</view>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+</viewState>
+</view>
+<view id="com.genuitec.eclipse.sqlexplorer.views.TableInfoView" partName="Table/Object Info">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="353" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="com.genuitec.eclipse.ast.deploy.core.serverview" partName="Servers">
+<viewState/>
+</view>
+<view id="com.genuitec.eclipse.sqlexplorer.views.SQLHistoryView" partName="SQL History"/>
+<view id="com.genuitec.org.hibernate.eclipse.console.views.QueryParametersView" partName="Query Parameters">
 <viewState/>
 </view>
 <view id="com.genuitec.org.hibernate.eclipse.console.views.DynamicQueryTranslatorView" partName="Hibernate Dynamic Query Translator">
 <viewState/>
 </view>
-<view id="com.genuitec.org.hibernate.eclipse.console.views.QueryParametersView" partName="Query Parameters">
-<viewState/>
-</view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -674,14 +710,19 @@
 <view id="org.eclipse.egit.ui.RepositoriesView" ratio="0.29984662"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.views.ProblemView" style="0">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
 <view id="com.genuitec.eclipse.ui.HTMLView" ratio="0.85"/>
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
 <view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@182d75a1" orientation="512" selectedTabId="org.eclipse.jdt.junit.ResultView" style="0">
+<fastViews>
+<view id="org.eclipse.jdt.junit.ResultView" ratio="0.3995399"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@f24b4d6" orientation="512" selectedTabId="org.eclipse.team.ui.GenericHistoryView" style="0">
@@ -757,6 +798,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@43327a92" ratio="0.5" ratioLeft="652" ratioRight="652" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@182d75a1" ratio="0.75" ratioLeft="978" ratioRight="326" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
 <info folder="true" part="topleft" ratio="0.39933994" ratioLeft="242" ratioRight="364" relationship="4" relative="cvslocation">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
@@ -777,7 +829,93 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-biz/pom.xml"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" path="/dzah-biz/src/main/resources/application.properties"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/BoneCPConfig.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/Application.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-parent/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-biz/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/dzah-biz/.classpath"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/dzah-biz/.classpath"/>
+</editors>
+<item historyLabel="dzah-biz/pom.xml" index="0"/>
+<item historyLabel="application.properties" index="1"/>
+<item historyLabel="BoneCPConfig.java" index="2">
+<position info="not_deleted" x="518" y="0"/>
+</item>
+<item historyLabel="AbstractTest.java" index="3">
+<position info="not_deleted" x="5" y="0"/>
+</item>
+<item historyLabel="AbstractTest.java" index="3">
+<position info="not_deleted" x="789" y="0"/>
+</item>
+<item historyLabel="Application.java" index="4">
+<position info="not_deleted" x="540" y="11"/>
+</item>
+<item historyLabel="AbstractTest.java" index="3">
+<position info="not_deleted" x="909" y="0"/>
+</item>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="5" y="0"/>
+</item>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="437" y="0"/>
+</item>
+<item historyLabel="AbstractTest.java" index="3">
+<position info="not_deleted" x="634" y="0"/>
+</item>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="380" y="0"/>
+</item>
+<item historyLabel="dzah-biz/pom.xml" index="0"/>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="380" y="0"/>
+</item>
+<item historyLabel="AbstractTest.java" index="3">
+<position info="not_deleted" x="634" y="0"/>
+</item>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="380" y="0"/>
+</item>
+<item historyLabel="dzah-parent/pom.xml" index="6"/>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="519" y="11"/>
+</item>
+<item historyLabel="AbstractTest.java" index="7">
+<position info="not_deleted" x="5" y="0"/>
+</item>
+<item historyLabel="AbstractTest.java" index="7">
+<position info="not_deleted" x="634" y="0"/>
+</item>
+<item historyLabel="AbstractTest.java" index="7">
+<position info="not_deleted" x="924" y="12"/>
+</item>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="340" y="0"/>
+</item>
+<item historyLabel="dzah-biz/pom.xml" index="8"/>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="380" y="0"/>
+</item>
+<item historyLabel="dzah-parent/pom.xml" index="6"/>
+<item historyLabel="dzah-biz/pom.xml" index="8"/>
+<item historyLabel=".classpath" index="9"/>
+<item historyLabel="AbstractTestCase.java" index="10">
+<position info="not_deleted" x="576" y="0"/>
+</item>
+<item historyLabel="TestSysService.java" index="5">
+<position info="not_deleted" x="384" y="0"/>
+</item>
+<item active="true" historyLabel=".classpath" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -792,6 +930,7 @@
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@f24b4d6"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@7abc5b69"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@5531e7e8"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@182d75a1"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -805,50 +944,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-core/pom.xml">
-<persistable path="/dzah-core/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name=".classpath" tooltip="dzah-biz/.classpath">
+<persistable path="/dzah-biz/.classpath"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-parent/pom.xml">
 <persistable path="/dzah-parent/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-spring/pom.xml">
-<persistable path="/dzah-spring/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-biz/pom.xml">
+<persistable path="/dzah-biz/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Application.java" tooltip="dzah-spring/src/main/java/hello/Application.java">
-<persistable path="/dzah-spring/src/main/java/hello/Application.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSysService.java" tooltip="dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java">
+<persistable path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="test-server.ldif" tooltip="dzah-spring/src/main/resources/test-server.ldif">
-<persistable path="/dzah-spring/src/main/resources/test-server.ldif"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Application.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/Application.java">
+<persistable path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/Application.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WebSecurityConfig.java" tooltip="dzah-spring/src/main/java/hello/WebSecurityConfig.java">
-<persistable path="/dzah-spring/src/main/java/hello/WebSecurityConfig.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractTest.java" tooltip="dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTest.java">
+<persistable path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTest.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name=".project" tooltip="dzah-spring/.project">
-<persistable path="/dzah-spring/.project"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoneCPConfig.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/BoneCPConfig.java">
+<persistable path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/BoneCPConfig.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpringContextHolder.java" tooltip="dzah-core/src/main/java/com/ch/wchhuangya/dzah/core/common/SpringContextHolder.java">
-<persistable path="/dzah-core/src/main/java/com/ch/wchhuangya/dzah/core/common/SpringContextHolder.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractDao.java" tooltip="dzah-core/src/main/java/com/ch/wchhuangya/dzah/core/common/AbstractDao.java">
-<persistable path="/dzah-core/src/main/java/com/ch/wchhuangya/dzah/core/common/AbstractDao.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TimeHelper.java" tooltip="dzah-util/src/main/java/com/ch/wchhuangya/dzah/util/TimeHelper.java">
-<persistable path="/dzah-util/src/main/java/com/ch/wchhuangya/dzah/util/TimeHelper.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" name="index.html" tooltip="dzah-spring/src/main/resources/static/index.html">
-<persistable path="/dzah-spring/src/main/resources/static/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="application.properties" tooltip="dzah-spring/src/main/resources/application.properties">
-<persistable path="/dzah-spring/src/main/resources/application.properties"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileUploadController.java" tooltip="dzah-spring/src/main/java/hello/FileUploadController.java">
-<persistable path="/dzah-spring/src/main/java/hello/FileUploadController.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="application.properties" tooltip="dzah-biz/src/main/resources/application.properties">
+<persistable path="/dzah-biz/src/main/resources/application.properties"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-entity/pom.xml">
 <persistable path="/dzah-entity/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Customer.java" tooltip="dzah-spring/src/main/java/hello/Customer.java">
-<persistable path="/dzah-spring/src/main/java/hello/Customer.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-toolkit/pom.xml">
+<persistable path="/dzah-toolkit/pom.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestTimeHelper.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/toolkit/TestTimeHelper.java">
+<persistable path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/toolkit/TestTimeHelper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TimeHelper.java" tooltip="dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/TimeHelper.java">
+<persistable path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/TimeHelper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="all-parent/pom.xml">
+<persistable path="/all-parent/pom.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-core/pom.xml">
+<persistable path="/dzah-core/pom.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-spring/pom.xml">
+<persistable path="/dzah-spring/pom.xml"/>
 </file>
 </mruList>
 </workbench>
