@@ -28,7 +28,7 @@ import com.ch.wchhuangya.dzah.Application;
 @SpringApplicationConfiguration(classes = {Application.class})
 @RunWith(SpringJUnit4ClassRunner.class)
 @Transactional
-@TransactionConfiguration(defaultRollback = true)
+@TransactionConfiguration(defaultRollback = false)
 public class AbstractTestCase {
 
 }

@@ -1,0 +1,788 @@
+/**
+ * 项目  dzah-biz 
+ * 创建时间  2015-7-2 上午10:24:14 
+ * Copyright (c) 2015, wchhuangya All rights reserved.
+ * wchhuangya 专有/保密源代码,未经许可禁止任何人通过任何* 渠道使用、修改源代码.
+ */
+
+package com.ch.wchhuangya.dzah.biz.common;
+
+import java.io.IOException;
+import java.io.Serializable;
+import java.lang.reflect.Field;
+import java.lang.reflect.ParameterizedType;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import org.apache.commons.collections.MapUtils;
+import org.apache.commons.lang.StringUtils;
+import org.hibernate.Criteria;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.MatchMode;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.orm.hibernate4.HibernateCallback;
+import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
+import org.springframework.util.Assert;
+
+import com.ch.wchhuangya.dzah.toolkit.Constants;
+import com.ch.wchhuangya.dzah.toolkit.Page;
+
+
+/**
+ * 类名: AbstractDao <br/> 
+ * 功能: 数据访问层的基类 <br/> 负责为单个Entity对象提供CRUD操作的Hibernate DAO基类 <br/>
+ * 子类只要在类定义时指定所管理Entity的Class, 即拥有对单个Entity对象的CRUD操作.
+ * 创建日期: 2015-7-2 上午10:24:14 <br/> 
+ *
+ * @author wchya
+ * @since Jdk 1.6
+ * @see       
+ *
+ */
+@SuppressWarnings({"unchecked","rawtypes"})
+public class AbstractDao<T, PK extends Serializable> extends HibernateDaoSupport {
+
+	@Autowired
+	protected JdbcTemplate jdbcTemplate;
+	
+	public JdbcTemplate getJdbcTemplate(){
+		return jdbcTemplate;
+	}
+	
+	/** Dao所管理的Entity类型 */
+	protected Class<T> entityClass;
+
+    /** 本类对应实体的字段与类型映射 */
+    private Map<String, String> fieldClassNames = null;
+
+    /**
+     * 取得entityClass. JDK1.4不支持泛型的子类可以抛开Class<T> entityClass,重载此函数达到相同效果。
+     */
+    protected Class<T> getEntityClass() {
+    	return entityClass;
+    }
+
+    /**
+     * 初始化属性名称与类型名称的键值对映射
+     */
+    private void initEntityFieldsClassNames() {
+		Field[] fields = this.entityClass.getDeclaredFields();
+		this.fieldClassNames = new HashMap<String, String>();
+		for (Field field : fields) {
+		    fieldClassNames.put(field.getName(), field.getType().getName());
+		}
+    }
+	
+	public AbstractDao(){
+		// 通过范型反射，取得在子类中定义的entityClass.
+		this.entityClass = (Class<T>) ((ParameterizedType) getClass()
+			.getGenericSuperclass()).getActualTypeArguments()[0];
+			this.initEntityFieldsClassNames();
+	}
+
+    public Serializable save(T entity) throws DataAccessException {
+		Assert.notNull(entity, "entity不能为空");
+		return getHibernateTemplate().save(entity);
+    }
+
+    public void saveOrUpdate(T entity) throws DataAccessException {
+		Assert.notNull(entity, "entity不能为空");
+		getHibernateTemplate().saveOrUpdate(entity);
+    }
+
+    public T merge(T entity) throws DataAccessException {
+		Assert.notNull(entity, "entity不能为空");
+		return (T) getHibernateTemplate().merge(entity);
+    }
+
+    public T update(T entity) throws DataAccessException {
+		Assert.notNull(entity, "entity不能为空");
+		return (T) getHibernateTemplate().merge(entity);
+    }
+
+    public void delete(T entity) throws DataAccessException {
+		Assert.notNull(entity, "entity不能为空");
+		getHibernateTemplate().delete(entity);
+    }
+
+    public void delete(final PK id) throws DataAccessException {
+		Assert.notNull(id, "id不能为空");
+		getHibernateTemplate().delete(get(id));
+    }
+
+    public void deleteAll(List<T> entities) throws DataAccessException {
+		Assert.notNull(entities, "entities不能为空");
+		getHibernateTemplate().deleteAll(entities);
+    }
+
+    /**
+     * 
+     * 根据id获取唯一对象
+     * 
+     * @author HT
+     * @param id
+     * @return
+     * @throws DataAccessException
+     */
+    public T get(final PK id) throws DataAccessException {
+    	return (T) getHibernateTemplate().get(entityClass, id);
+    }
+
+    /**
+     * 
+     * 获取全部对象
+     * 
+     * @author HT
+     * @return
+     */
+    public List<T> getAll() {
+    	return find();
+    }
+
+    /**
+     * 
+     * 按属性查询唯一对象 <br/>
+     * 
+     * @author HT
+     * @param property
+     * @param value
+     * @return
+     */
+    public T findUniqueByProperty(final String property, final Object value) {
+		Assert.hasText(property, "propertyName不能为空");
+		Criterion criterion = Restrictions.eq(property, value);
+		return (T) createCriteria(criterion).uniqueResult();
+    }
+
+
+    /**
+     * 
+     * 根据属性查找对象列表<br/>
+     * 
+     * @author HT
+     * @param property
+     * @param value
+     * @return
+     */
+    public List<T> findByProperty(final String property, final Object value) {
+		Assert.hasText(property, "propertyName不能为空");
+		Criterion criterion = Restrictions.eq(property, value);
+		return find(criterion);
+    }
+    
+
+    /**
+     * 
+     * 按属性以Like AnyWhere方式查询对象列表<br/>
+     * 
+     * @author HT
+     * @param property
+     * @param value
+     * @return
+     */
+    public List<T> findLikeProperty(final String property, final String value) {
+		Assert.hasText(property, "propertyName不能为空");
+		Criterion criterion = Restrictions.like(property, value,
+			MatchMode.ANYWHERE);
+		return find(criterion);
+    }
+
+    /**
+     * hql查询.
+     * 
+     * @param values
+     *            可变参数 用户可以如下四种方式使用 dao.find(hql) dao.find(hql,arg0);
+     *            dao.find(hql,arg0,arg1); dao.find(hql,new
+     *            Object[arg0,arg1,arg2])
+     */
+	public List find(String hql, Object... values) {
+		if (values.length == 0)
+		    return getHibernateTemplate().find(hql);
+		else
+		    return getHibernateTemplate().find(hql, values);
+    }
+
+    /**
+     * 
+     * 使用hql查询对象列表
+     * 
+     * @author HT
+     * @param hql
+     * @param values
+     * @return
+     */
+    public List<T> findList(final String hql, final Object... values) {
+    	return (List<T>) getHibernateTemplate().find(hql, values);
+    }
+
+
+    /**
+     * 
+     * 使用hql分页查询对象
+     * 
+     * @author HT
+     * @param hql
+     *            hql查询语句
+     * @param pageNo
+     *            页码
+     * @param pageSize
+     *            每页数据个数
+     * @param values
+     *            hql不定参数
+     * @return
+     */
+    public Page findPage(final String hql, final int pageNoTmp,
+	    final int pageSize, final Object... values) {
+		final int pageNo = pageNoTmp == 0 ? 1 : pageNoTmp;
+		final String countSql = "select count (*) "
+			+ removeSelect(removeOrders(hql));
+		final long totalCount = this.getCount(countSql, values);
+		if (totalCount < 1) {
+		    return new Page();
+		} else {
+		    final int startIndex = Page.getStartOfPage(pageNo, pageSize);
+		    List<T> list = getHibernateTemplate().execute(
+			    new HibernateCallback<List<T>>() {
+					@Override
+					public List<T> doInHibernate(Session session)
+						throws HibernateException {
+					    Query query = session.createQuery(hql);
+					    query.setFirstResult(startIndex);// 开始取数据的下标
+					    query.setMaxResults(pageSize);// 读取数据记录数
+					    if (values != null) {
+							for (int i = 0; i < values.length; i++) {
+							    query.setParameter(i, values[i]);
+							}
+					    }
+					    return query.list();
+					}
+			    });
+		    return new Page(startIndex, totalCount, pageSize, list);
+		}
+    }
+ 
+    /**
+     * 
+     * 使用SQL通过jdbc查询对象列表 <br/>
+     * 
+     * @author HT
+     * @param querySql
+     *            sql查询语句
+     * @param values
+     *            sql不定参数
+     * @return
+     */
+    public List<T> findListBySql(final String querySql, final Object... values) {
+
+    	List<T> list = this.jdbcTemplate.query(querySql,
+		new BeanPropertyRowMapper<T>(entityClass), values);
+		return list;
+    }
+    /**
+     * 
+     * 使用SQL通过jdbc查询对象列表 <br/>
+     * 
+     * @author HT
+     * @param querySql
+     *            sql查询语句
+     * @param values
+     *            sql不定参数
+     * @return
+     */
+    public List findBySql(final String querySql, final Object... values) {
+    	List list = this.jdbcTemplate.queryForList(querySql,values);
+    	return list;
+    }
+
+    
+    /**
+     * 
+     * 使用SQL通过jdbc分页查询对象列表
+     * 
+     * @author HT
+     * @param sql
+     *            sql查询语句
+     * @param pageNoTmp
+     *            分页页码
+     * @param pageSize
+     *            分页大小
+     * @param values
+     *            不定参数
+     * @return
+     */
+    public List<Map<String, Object>> findListBySql1(final String sql, final int pageNoTmp,
+	    final int pageSize, final Object... values) {
+
+		final int pageNo = pageNoTmp == 0 ? 1 : pageNoTmp;
+		final String countSql = "select count (*)" + removeSelect(removeOrders(sql));
+		final long totalCount = this.getCountBySql(countSql, values);
+		if (totalCount < 1) {
+		    return null;
+		} else {
+		    final int startIndex = Page.getStartOfPage(pageNo, pageSize);
+		    final String querySql = "select * from (select tmp.*,rownum num from (" + sql +
+			    ") tmp where rownum <= " + startIndex + pageSize + 
+			    ") where num >" + startIndex;
+		    List<Map<String, Object>> list = this.jdbcTemplate.queryForList(querySql,
+			    values);
+		    return list;
+		}
+    }
+
+    /**
+     * 
+     * 使用SQL通过jdbc分页查询对象 <br/>
+     * 根据DAO定义的泛型查询 <br/>
+     * 
+     * @author HT
+     * @param sql
+     *            sql查询语句
+     * @param pageNo
+     *            页码
+     * @param pageSize
+     *            每页数据个数
+     * @param values
+     *            sql不定参数
+     * @return
+     */
+    public Page findPageBySql(final String sql, final int pageNoTmp,
+	    final int pageSize, final Object... values) {
+		final int pageNo = pageNoTmp == 0 ? 1 : pageNoTmp;
+		final String countSql = "select count (*) " + removeSelect(removeOrders(sql));
+		final long totalCount = this.getCountBySql(countSql, values);
+		if (totalCount < 1) {
+		    return new Page();
+		} else {
+		    final int startIndex = Page.getStartOfPage(pageNo, pageSize);
+		    final String querySql = "select * from (select tmp.*,rownum num from (" + sql +
+			    ") tmp where rownum <= " + startIndex + pageSize + 
+			    ") where num >" + startIndex;
+		    List<T> list = this.jdbcTemplate.query(querySql,
+			    new BeanPropertyRowMapper<T>(entityClass), values);
+		    return new Page(startIndex, totalCount, pageSize, list);
+		}
+    }
+
+    /**
+     * 
+     * 使用SQL通过jdbc分页查询对象 <br/>
+     * 根据给定的entity类查询 <br/>
+     * 
+     * @author HT
+     * @param sql
+     *            sql查询语句
+     * @param cls   
+     * 		      实体对象类
+     * @param pageNo
+     *            页码
+     * @param pageSize
+     *            每页数据个数
+     * @param values
+     *            sql不定参数
+     * @return
+     */
+    public <X> Page  findPageBySql(final String sql,Class cls,final int pageNoTmp,
+	    final int pageSize, final Object... values) {
+		final int pageNo = pageNoTmp == 0 ? 1 : pageNoTmp;
+		final String countSql = "select count (*) " + removeSelect(removeOrders(sql));
+		final long totalCount = this.getCountBySql(countSql, values);
+		if (totalCount < 1) {
+		    return new Page();
+		} else {
+		    final int startIndex = Page.getStartOfPage(pageNo, pageSize);
+		    final String querySql = "select * from (select tmp.*,rownum num from (" + sql +
+			    ") tmp where rownum <= " + startIndex + pageSize +
+			    ") where num >" + startIndex;
+		    List<X> list = this.jdbcTemplate.query(querySql,
+			    new BeanPropertyRowMapper<X>(cls), values);
+		    return new Page(startIndex, totalCount, pageSize, list);
+		}
+    }
+    
+    /**
+     * 
+     * 使用SQL通过jdbc分页查询对象 <br/> 
+     * 根据自定义的RowMapper查询 <br/>
+     * 
+     * @author HT 
+     * @param sql 查询sql
+     * @param mapper 自定义对象映射
+     * @param pageNoTmp 页码
+     * @param pageSize  每页数据个数
+     * @param values sql不定参数
+     * @return
+     */
+    public Page findPageBySql(final String sql, final RowMapper<T> mapper, final int pageNoTmp,
+	    final int pageSize, final Object... values) {
+		final int pageNo = pageNoTmp == 0 ? 1 : pageNoTmp;
+		final String countSql = "select count (*) " + removeSelect(removeOrders(sql));
+		final long totalCount = this.getCountBySql(countSql, values);
+		if (totalCount < 1) {
+		    return new Page();
+		} else {
+		    final int startIndex = Page.getStartOfPage(pageNo, pageSize);
+		    final String querySql = "select * from (select tmp.*,rownum num from (" + sql + 
+			    ") tmp where rownum <= " + startIndex + pageSize + 
+			    ") where num >" + startIndex;
+		    List<T> list = this.jdbcTemplate.query(querySql,mapper, values);
+		    return new Page(startIndex, totalCount, pageSize, list);
+		}
+    }
+    
+    /**
+     * 
+     * 使用包含UNION的SQL通过jdbc分页查询对象 <br/>
+     * 
+     * @author HT
+     * @param sql
+     *            查询语句()
+     * @param pageNo
+     *            页码
+     * @param pageSize
+     *            每页数据个数
+     * @param cls
+     *            查询数据对象类型
+     * @param values
+     *            sql不定参数
+     * @return
+     */
+    public Page findPageByUnionSql(final String sql, final int pageNo,
+	    final int pageSize, final Object... values) {
+
+		final String countSql = "select count (*) from (" + removeOrders(sql)
+			+ ")";
+		final long totalCount = this.getCountBySql(countSql, values);
+		if (totalCount < 1) {
+		    return new Page();
+		} else {
+		    final int startIndex = Page.getStartOfPage(pageNo, pageSize);
+		    final String querySql = "select * from (select tmp.*,rownum num from (" + sql + 
+			    ") tmp where rownum <= " + startIndex + pageSize + 
+			    ") where num >" + startIndex;
+		    List<T> list = this.jdbcTemplate.query(querySql,
+			    new BeanPropertyRowMapper<T>(entityClass), values);
+		    return new Page(startIndex, totalCount, pageSize, list);
+		}
+    }
+
+    /**
+     * 
+     * 使用jdbctemplate批量更新数据 <br/>
+     * 数据量过大时分组多批次批量提交，达到性能与内存的平衡<br/>
+     * 
+     * @author HT
+     * @param sql
+     *            批量执行的同一sql语句
+     * @param data
+     *            批量执行的数据源
+     * @param pss
+     *            自定义接口，实现PreparedStatement的赋值
+     */
+    public void batchSqlUpdate(final String sql, final List<T> data,
+	    final PreparedStatementSetter<T> pss) {
+		Assert.notEmpty(data, "执行批量插入数据源不能为空!");
+	
+		// 计算需要分几批次批量提交
+		final int groupSize = data.size() % Constants.DEFAULT_BATCH_SIZE == 0 ? data
+			.size() / Constants.DEFAULT_BATCH_SIZE
+			: (data.size() / Constants.DEFAULT_BATCH_SIZE) + 1;
+	
+		for (int j = 0; j < groupSize; j++) {
+		    final int begin = j * Constants.DEFAULT_BATCH_SIZE;
+		    final int end = j < groupSize - 1 ? begin
+			    + Constants.DEFAULT_BATCH_SIZE : data.size();
+		    final List<?> tmp = data.subList(begin, end);
+	
+		    this.jdbcTemplate.batchUpdate(sql,
+			    new BatchPreparedStatementSetter() {
+					@Override
+					public void setValues(PreparedStatement ps, int i)
+						throws SQLException {
+					    pss.setValues(ps, (T) tmp.get(i));
+					}
+		
+					@Override
+					public int getBatchSize() {
+					    return tmp.size();
+					}
+			    });
+		}
+    }
+    
+    
+
+    /**
+     * 
+     * 使用jdbctemplate批量更新数据 <br/>
+     * 数据量过大时分组多批次批量提交，达到性能与内存的平衡<br/>
+     * 允许传入非DAO泛型定义的类型<br/>
+     * 
+     * @author HT
+     * @param sql
+     *            批量执行的同一sql语句
+     * @param data
+     *            批量执行的数据源
+     * @param pss
+     *            自定义接口，实现PreparedStatement的赋值
+     */
+    public <X> void batchSqlUpdate2(final String sql, final List<X> data,
+	    final PreparedStatementSetter<X> pss) {
+		Assert.notEmpty(data, "执行批量插入数据源不能为空!");
+	
+		// 计算需要分几批次批量提交
+		final int groupSize = data.size() % Constants.DEFAULT_BATCH_SIZE == 0 ? data
+			.size() / Constants.DEFAULT_BATCH_SIZE
+			: (data.size() / Constants.DEFAULT_BATCH_SIZE) + 1;
+	
+		for (int j = 0; j < groupSize; j++) {
+		    final int begin = j * Constants.DEFAULT_BATCH_SIZE;
+		    final int end = j < groupSize - 1 ? begin
+			    + Constants.DEFAULT_BATCH_SIZE : data.size();
+		    final List<?> tmp = data.subList(begin, end);
+	
+		    this.jdbcTemplate.batchUpdate(sql,
+			    new BatchPreparedStatementSetter() {
+				@Override
+					public void setValues(PreparedStatement ps, int i)
+						throws SQLException {
+					    pss.setValues(ps, (X) tmp.get(i));
+					}
+		
+					@Override
+					public int getBatchSize() {
+					    return tmp.size();
+					}
+			    });
+		}
+    }
+
+    /**
+     * 
+     * execute:执行hql <br/>
+     * 用于批量删除或更新操作<br/>
+     * 
+     * @author HT
+     * @param hql
+     * @param values
+     */
+    public int execute(final String hql, final Object... values) {
+
+		Query query = currentSession().createQuery(hql);
+		if (values != null) {
+		    for (int i = 0; i < values.length; i++) {
+			query.setParameter(i, values[i]);
+		    }
+		}
+		return query.executeUpdate();
+    }
+
+    /**
+     * 
+     * 根据hql查询数据总数 <br/>
+     * 
+     * @author HT
+     * @param hql
+     * @param values
+     * @return
+     */
+    public Long getCount(final String hql, final Object... values) {
+		return ((Long) getHibernateTemplate().iterate(hql, values).next())
+			.longValue();
+    }
+
+    /**
+     * 
+     * 根据sql查询数据总数 <br/>
+     * 
+     * @author HT
+     * @param sql
+     * @param values
+     * @return
+     */
+    public Long getCountBySql(final String sql, final Object... values) {
+    	return jdbcTemplate.queryForObject(sql, Long.class, values);
+    }
+
+
+    /**
+     * 按Criteria查询对象列表.
+     * 
+     * @param criterions
+     *            数量可变的Criterion.
+     */
+    private List<T> find(final Criterion... criterions) {
+    	return createCriteria(criterions).list();
+    }
+
+    /**
+     * 根据Criterion条件创建Criteria.
+     * 
+     * 本类封装的find()函数全部默认返回对象类型为T,当不为T时使用本函数.
+     * 
+     * @param criterions
+     *            数量可变的Criterion.
+     */
+    private Criteria createCriteria(final Criterion... criterions) {
+		Criteria criteria = currentSession().createCriteria(entityClass);
+		for (Criterion c : criterions) {
+		    criteria.add(c);
+		}
+		return criteria;
+    }
+
+    /**
+     * 
+     * 取得对象的主键名
+     * 
+     * @author HT
+     * @return
+     */
+    private String getIdName() {
+		ClassMetadata meta = getSessionFactory().getClassMetadata(entityClass);
+		return meta.getIdentifierPropertyName();
+    }
+
+    /**
+     * 
+     * 去除hql的select 子句，未考虑union的情况
+     * 
+     * @author HT
+     * @param hql
+     * @return
+     */
+    public String removeSelect(String hql) {
+		Assert.hasText(hql);
+		int beginPos = hql.toLowerCase().indexOf("from ");
+		Assert.isTrue(beginPos != -1, " hql : " + hql
+			+ " must has a keyword 'from'");
+		return hql.substring(beginPos);
+    }
+
+    /**
+     * 
+     * 去除hql的orderby 子句，用于分页查询
+     * 
+     * @author HT
+     * @param hql
+     * @return
+     */
+    public String removeOrders(String hql) {
+		Assert.hasText(hql);
+		Pattern p = Pattern.compile("order\\s*by[\\w|\\W|\\s|\\S]*",
+			Pattern.CASE_INSENSITIVE);
+		Matcher m = p.matcher(hql);
+		StringBuffer sb = new StringBuffer();
+		while (m.find()) {
+		    m.appendReplacement(sb, "");
+		}
+		m.appendTail(sb);
+		return sb.toString();
+    }
+    public String clobToString(Clob clob)
+    {
+    	if(clob != null)
+    	{
+    		try {
+				Reader r = clob.getCharacterStream();
+				char[] c = new char[256];
+				int index = -1 ;
+				StringBuffer sb = new StringBuffer(256);
+				while((index = r.read(c)) != -1)
+				{
+					sb.append(c, 0, index);
+				}
+				return sb.toString();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+    	}
+    	return StringUtils.EMPTY;
+    }
+    
+    /**
+     * 类名: ProcessData <br/> 
+     * 功能: TODO 二次处理查询结果接口. <br/> 
+     * 创建时间: 2014-4-23 下午3:10:49 <br/> 
+     * 
+     * @author lei 
+     * @version AbstractDao 
+     * @since Jdk 1.6
+     */
+	interface ProcessData
+	{
+		/**
+		 * process: 对于迭代中的查询结果每条数据进行二次处理. <br/> 
+		 * TODO(这里描述这个方法的注意事项 – 可选).<br/> 
+		 * @author lei 
+		 * @param data 查询结果的一条数据
+		 * @return 处理后的一条数据
+		 */
+		public Map<String,Object> process(Map<String,Object> data);
+	}
+	
+	/**
+	 * queryForList: 可替换查询结果列名的List<Map<String,Object>> ，Map<String,Object> 为一条数据结果  . <br/> 
+	 * @author lei 
+	 * @param sql 查询语句
+	 * @param params 查询参数
+	 * @param propertiesMapper 查询结果列名与别名的映射 ,  key：实际列名 , value: 替换后的列名
+	 * @return
+	 */
+	public List<Map<String,Object>> queryForList(String sql , Object[] params , final Map<String,String> propertiesMapper)
+	{
+		return this.queryForList(sql, params, propertiesMapper, null);
+	}
+    
+	/**
+	 * queryForList: 可替换查询结果列名的List<Map<String,Object>> ，Map<String,Object> 为一条数据结果 ，并提供接口进行二次处理每一条结果数据  . <br/> 
+	 * @author lei 
+	 * @param sql 查询语句
+	 * @param params 查询参数
+	 * @param propertiesMapper 查询结果列名与别名的映射 ,  key：实际列名 , value: 替换后的列名
+	 * @param processData 二次处理接口，如果不需要二次处理可为null
+	 * @return
+	 */
+	public List<Map<String,Object>> queryForList(String sql , Object[] params , final Map<String,String> propertiesMapper , final ProcessData processData)
+	{
+		List<Map<String,Object>> list = this.getJdbcTemplate().query(sql , 
+				params == null ? new Object[]{} : params , new RowMapper<Map<String,Object>>(){
+			@Override
+			public Map<String,Object> mapRow(ResultSet rs, int index) throws SQLException {
+				Map<String,Object> map = new HashMap<String , Object>();
+				//如果propertiesMapper不为空，则使用属性名替换
+				if(MapUtils.isNotEmpty(propertiesMapper))
+				{
+					Set<Entry<String,String>> entrySet = propertiesMapper.entrySet();
+					for (Entry<String, String> entry : entrySet) {
+						//如果别名为空，则仍然使用原属性名
+						map.put(StringUtils.isNotBlank(entry.getValue()) ? entry.getValue() : entry.getKey() , rs.getObject(entry.getKey()));
+					}
+				}
+				else
+				{
+					int colTotal = rs.getMetaData().getColumnCount();
+					for (int i = 1; i <= colTotal; i++) {
+						map.put(rs.getMetaData().getColumnName(i) , rs.getObject(i));
+					}
+				}
+				//如果存在二次处理，则进行二次处理
+				return processData != null ? processData.process(map) : map;
+			}});
+		return list;
+	}
+}

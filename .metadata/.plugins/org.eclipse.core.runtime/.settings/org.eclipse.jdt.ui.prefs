@@ -1,10 +1,10 @@
-#Tue Jun 30 18:12:44 CST 2015
+#Thu Jul 02 18:28:49 CST 2015
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
 org.eclipse.pde.ui.ExternalPluginLibrariesFilter1=true
 org.eclipse.jdt.ui.text.templates_migrated=true
-useAnnotationsPrefPage=true
 lastRecentlyUsedFilters=org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*,
+useAnnotationsPrefPage=true
 eclipse.preferences.version=1
 org.eclipse.jface.textfont=1|Consolas|14.25|0|WINDOWS|1|-19|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
 tabWidthPropagated=true
@@ -18,13 +18,13 @@ content_assist_autoactivation_triggers_java=.abcdefghijklmnopqrstuvwxyz(
 proposalOrderMigrated=true
 org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter=true
 org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter=true
-content_assist_proposals_background=255,255,255
 org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter=true
 org.eclipse.jdt.ui.formatterprofiles.version=12
+content_assist_proposals_background=255,255,255
 content_assist_number_of_computers=17
 org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter=true
 useQuickDiffPrefPage=true
 CustomFiltersActionGroup.org.eclipse.jdt.ui.PackageExplorer.TAG_DUMMY_TO_TEST_EXISTENCE=storedViewPreferences
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.ch.wchhuangya.dzah.entity.sys.SysUser"><rhs name\="com.ch.wchhuangya.dzah.entity.sys.SysUser"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

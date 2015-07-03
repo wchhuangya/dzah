@@ -8,13 +8,16 @@
 package com.ch.wchhuangya.dzah.test.sys;
 
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import com.ch.wchhuangya.dzah.biz.modules.sys.service.SysUserService;
+import com.ch.wchhuangya.dzah.entity.sys.SysUser;
 import com.ch.wchhuangya.dzah.test.AbstractTestCase;
 
 
 /**
  * 类名: TestSysService <br/> 
- * 功能:  <br/> 
+ * 功能: 系统用户测试类 <br/> 
  * 创建日期: 2015-7-1 下午1:01:53 <br/> 
  *
  * @author wchya
@@ -23,9 +26,19 @@ import com.ch.wchhuangya.dzah.test.AbstractTestCase;
  *
  */
 public class TestSysService extends AbstractTestCase {
+	
+	@Autowired
+	private SysUserService sysUserService;
 
 	@Test
 	public void testAddUser() throws Exception {
 		System.out.println("success");
 	}
+	
+	@Test
+	public void testSaveAndUpdate() throws Exception {
+		SysUser sysUser = new SysUser("开天辟地第一人");
+		sysUserService.saveOrUpdate(sysUser);
+		System.out.println("成功");
+	} 
 }
