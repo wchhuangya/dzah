@@ -1,0 +1,44 @@
+/**
+ * 项目  dzah-hibernate 
+ * 创建时间  2015-7-3 下午4:38:53 
+ * Copyright (c) 2015, wchhuangya All rights reserved.
+ * wchhuangya 专有/保密源代码,未经许可禁止任何人通过任何* 渠道使用、修改源代码.
+ */
+
+package com.ch.wchhuangya.dzah.hibernate.util;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+
+/**
+ * 类名: HibernateUtil <br/> 
+ * 功能: Hibernate SessionFactory助手类 <br/> 
+ * 创建日期: 2015-7-3 下午4:38:53 <br/> 
+ *
+ * @author wchya
+ * @since Jdk 1.6
+ * @see       
+ *
+ */
+public class HibernateUtil {
+
+	private static final SessionFactory sessionFactory = buildSessionFactory();
+	
+	private static SessionFactory buildSessionFactory() {
+        try {
+           return new Configuration().configure().buildSessionFactory(
+			    new StandardServiceRegistryBuilder().build() );
+        }
+        catch (Throwable ex) {
+            // 确保异常被打印出来，因为，异常有可能被“吃”掉
+            System.err.println("Initial SessionFactory creation failed." + ex);
+            throw new ExceptionInInitializerError(ex);
+        }
+    }
+
+    public static SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+}

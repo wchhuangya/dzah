@@ -1,0 +1,10 @@
+#Mon Jul 06 16:04:22 CST 2015
+TOMCAT_HOME=D\:\\apache-tomcat-7.0.52-2
+TOMCAT_TEMP=D\:\\apache-tomcat-7.0.52-2\\temp
+LIBRARY_PATH="C\:\\Program Files\\Java\\jdk1.6.0_45\\bin;D\:\\apache-tomcat-7.0.52-2\\bin"
+TOMCAT_BASE=D\:\\apache-tomcat-7.0.52-2
+ENDORSED_DIRS="D\:\\apache-tomcat-7.0.52-2/common/endorsed"
+eclipse.preferences.version=1
+JDK_HOME=C\:\\Program Files\\Java\\jdk1.6.0_45
+OPT_VM_ARGS=-Xms64m -Xmx256m -XX\:PermSize\=128M -XX\:MaxNewSize\=256m -XX\:MaxPermSize\=256m
+SERVER_ENABLEMENT=true

@@ -21,8 +21,16 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="450" key="height"/>
+		<item value="480" key="width"/>
+		<item value="64" key="y"/>
+		<item value="443" key="x"/>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\project\personal\myeclipse\git\dzah\dzah-hibernate1"/>
+			<item value="D:\project\personal\myeclipse\git\dzah\dzah-hibernate"/>
 			<item value="D:\project\personal\myeclipse\git\dzah\dzah-parent"/>
 			<item value="D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml"/>
 			<item value="D:\project\personal\myeclipse\git\dzah\all-parent\pom.xml"/>
@@ -36,18 +44,18 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 	</section>
-	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
-		<item value="450" key="height"/>
-		<item value="480" key="width"/>
-		<item value="64" key="y"/>
-		<item value="443" key="x"/>
-	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
+			<item value="com.ch.wchhuangya.dzah"/>
+			<item value="wer"/>
 		</list>
 		<list key="package">
+			<item value="com.ch.wchhuangya.dzah.hibernate"/>
+			<item value="foo"/>
 		</list>
 		<list key="artifactId">
+			<item value="dzah-hibernate"/>
+			<item value="43ds"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -57,6 +65,7 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 		<list key="version">
+			<item value="0.0.1"/>
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
@@ -73,34 +82,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.ch.wchhuangya.dzah"/>
-			<item value="com.ch.wchhuangya.dzah.entity"/>
-			<item value="org.springframework.boot"/>
-			<item value="org.springframework"/>
-			<item value="com.ch.wchhuangya"/>
 		</list>
 		<list key="name">
-			<item value="dzah-biz"/>
-			<item value="dzah-entity"/>
-			<item value="dzah-toolkit"/>
-			<item value="all-parent"/>
-			<item value="dzah-spring"/>
-			<item value="gs-rest-service"/>
-			<item value="dzah-core"/>
-			<item value="dzah-util"/>
-			<item value="dzah-parent"/>
 		</list>
 		<list key="artifactId">
-			<item value="dzah-biz"/>
-			<item value="dzah-parent"/>
-			<item value="dzah-entity"/>
-			<item value="dzah-toolkit"/>
-			<item value="all-parent"/>
-			<item value="dzah-spring"/>
-			<item value="spring-boot-starter-parent"/>
-			<item value="gs-rest-service"/>
-			<item value="dzah-core"/>
-			<item value="dzah-util"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -110,10 +95,7 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 		<list key="version">
-			<item value="0.0.1"/>
 			<item value="0.0.1-SNAPSHOT"/>
-			<item value="1.1.12.RELEASE"/>
-			<item value="1.2.4.RELEASE"/>
 		</list>
 	</section>
 </section>

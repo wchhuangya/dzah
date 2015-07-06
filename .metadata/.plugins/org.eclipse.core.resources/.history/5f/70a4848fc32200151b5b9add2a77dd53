@@ -1,0 +1,144 @@
+/**
+ * 项目  dzah-hibernate 
+ * 创建时间  2015-7-3 下午5:03:58 
+ * Copyright (c) 2015, wchhuangya All rights reserved.
+ * wchhuangya 专有/保密源代码,未经许可禁止任何人通过任何* 渠道使用、修改源代码.
+ */
+
+package com.ch.wchhuangya.dzah.hibernate;
+
+import java.util.Date;
+import java.util.List;
+
+import org.hibernate.Session;
+
+import com.ch.wchhuangya.dzah.hibernate.domain.Event;
+import com.ch.wchhuangya.dzah.hibernate.domain.Person;
+import com.ch.wchhuangya.dzah.hibernate.util.HibernateUtil;
+
+
+/**
+ * 类名: EventManager <br/> 
+ * 功能: 运行的主类 <br/> 
+ * 创建日期: 2015-7-3 下午5:03:58 <br/> 
+ *
+ * @author wchya
+ * @since Jdk 1.6
+ * @see       
+ *
+ */
+@SuppressWarnings({"rawtypes", "unchecked", "unused"})
+public class EventManager {
+
+	public static void main(String[] args) {
+		EventManager mgr = new EventManager();
+		
+		if(args[0].equals("store")){
+			mgr.createAndStoreEvent("中文事件", new Date());
+		} else if (args[0].equals("list")) {
+            List events = mgr.listEvents();
+            for (int i = 0; i < events.size(); i++) {
+                Event theEvent = (Event) events.get(i);
+                System.out.println(
+                        "Event: " + theEvent.getTitle() + " Time: " + theEvent.getDate()
+                );
+            }
+        } else if (args[0].equals("addpersontoevent")) {
+            Long eventId = mgr.createAndStoreEventLong("My Event", new Date());
+            Long personId = mgr.createAndStorePersonLong("Foo", "Bar");
+            mgr.addPersonToEvent(personId, eventId);
+            System.out.println("Added person " + personId + " to event " + eventId);
+        }
+		
+		HibernateUtil.getSessionFactory().close();
+	}
+	
+    private void createAndStoreEvent(String title, Date theDate) {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        Event theEvent = new Event();
+        theEvent.setTitle(title);
+        theEvent.setDate(theDate);
+        session.save(theEvent);
+
+        session.getTransaction().commit();
+    }
+	
+	private void createAndStorePerson(String firstName, String lastName) {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        Person person = new Person();
+        person.setFirstName(firstName);
+        person.setLastName(lastName);
+        
+        session.save(person);
+
+        session.getTransaction().commit();
+    }
+	
+    private Long createAndStoreEventLong(String title, Date theDate) {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        Event theEvent = new Event();
+        theEvent.setTitle(title);
+        theEvent.setDate(theDate);
+        Long iid = (Long) session.save(theEvent);
+
+        session.getTransaction().commit();
+        return iid;
+    }
+	
+    private Long createAndStorePersonLong(String firstName, String lastName) {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        Person person = new Person();
+        person.setFirstName(firstName);
+        person.setLastName(lastName);
+        
+        Long iid = (Long) session.save(person);
+
+        session.getTransaction().commit();
+        
+        return iid;
+    }
+    
+	private List listEvents() {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        List result = session.createQuery("from Event").list();
+        session.getTransaction().commit();
+        return result;
+    }
+	
+	private void addPersonToEvent(Long personId, Long eventId) {
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		
+		/*第一种方法
+		Event aEvent = (Event) session.load(Event.class, eventId);
+		
+		//TODO 没有使用update或save方法，这是由于hibernate的automatic dirty checking（自动脏数据检查）机制
+		//只要对象处于持久状态，也就是说，它们被绑定到hibernate的某个Session实例上，hibernate会监测对象的改变，如果发生改变，在后台隐式的提交
+		aPerson.getEvents().add(aEvent);
+		*/
+		
+		Person aPerson = (Person) session.createQuery("select p from Person p left join fetch p.events where p.id = :pid")
+							.setParameter("pid", personId).uniqueResult();
+        Event anEvent = (Event) session.load(Event.class, eventId);
+		
+		session.getTransaction().commit();//第一个工作单元的结束
+		
+		aPerson.getEvents().add(anEvent);//aPerson是游离态
+		
+		//开始第二个工作单元
+		Session session2 = HibernateUtil.getSessionFactory().getCurrentSession();
+        session2.beginTransaction();
+        session2.update(aPerson); // update通过把aPerson重新绑定到新工作单元的Session上的方式，使得aPerson变为持久态
+		
+		session.getTransaction().commit();
+	}
+}

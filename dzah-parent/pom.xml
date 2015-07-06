@@ -15,6 +15,7 @@
 		<module>../dzah-toolkit/pom.xml</module>
 		<module>../dzah-entity/pom.xml</module>
 		<module>../dzah-biz/pom.xml</module>
+		<module>../dzah-hibernate/pom.xml</module>
 	</modules>
 
 	<properties>

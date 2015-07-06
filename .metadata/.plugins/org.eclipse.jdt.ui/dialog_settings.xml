@@ -16,13 +16,13 @@
 	</section>
 	<section name="NewXmlCreationWizardPage">
 		<item value="Default XML template" key="templatezh_CN"/>
-		<item value="/dzah-biz/src/main/resources" key="filePath"/>
+		<item value="/dzah-hibernate/src/main/resources" key="filePath"/>
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="2" key="pageIndex"/>
+		<item value="0" key="pageIndex"/>
 	</section>
 	<section name="JavaSearchPage">
 		<item value="false" key="CASE_SENSITIVE"/>

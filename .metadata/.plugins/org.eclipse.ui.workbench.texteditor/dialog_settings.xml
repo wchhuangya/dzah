@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="statementsCacheSize" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
-			<item value="statementsCacheSize"/>
-			<item value="org.apache.com"/>
-			<item value="webmvc"/>
-			<item value="packaging"/>
-			<item value="java.version"/>
-			<item value="ParameterizedType"/>
-			<item value="transactionManager"/>
-			<item value="bonecp.acquireIncrement"/>
+			<item value="prope"/>
+			<item value="properties"/>
+			<item value="property"/>
+			<item value="timehe"/>
+			<item value="first"/>
+			<item value="printEventForm"/>
+			<item value="session"/>
+			<item value="sessionfa"/>
 		</list>
 		<list key="replacehistory">
 		</list>

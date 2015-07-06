@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ch.wchhuangya.dzah.hibernate.domain">
+
+	<class name="Person" table="PERSON">
+		<id name="id" column="PERSON_ID">
+            <generator class="native"/>
+        </id>
+        <property name="age"/>
+        <property name="firstname"/>
+        <property name="lastname"/>
+        
+        <!-- table="PERSON_EVENT"是关系表的名称，关系表是必须存在的 -->
+        <set name="events" table="PERSON_EVENT">
+        	<key column="PERSON_ID" /><!-- 用于定义Person这边关系中的主键列 -->
+        	<many-to-many column="EVENT_ID" class="Event" /><!-- 用于定义Event这边关系中的主键列 -->
+        </set>
+        
+        <set name="emailAddresses" table="PERSON_EMAIL_ADDR">
+        	<!-- 定义了集合表中外键的名称 -->
+        	<key column="PERSON_ID" />
+        	<!-- element表示该集合没有包含另一个实体的引用，而是包含了由type决定的(在这里是string)value type的值的集合 -->
+        	<element column="EMAIL_ADDR" type="string" />
+        </set>
+	</class>
+
+</hibernate-mapping>

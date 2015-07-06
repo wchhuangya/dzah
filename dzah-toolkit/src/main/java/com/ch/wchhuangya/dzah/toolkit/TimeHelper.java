@@ -105,6 +105,6 @@ public class TimeHelper {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(getCurrentHour(0));
+		System.out.println(getDateStringForFormat("dd.MM.yyyy"));
 	}
 }

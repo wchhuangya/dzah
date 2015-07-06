@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>dzah-parent</artifactId>
+		<groupId>com.ch.wchhuangya.dzah</groupId>
+		<version>0.0.1</version>
+		<relativePath>../dzah-parent/pom.xml</relativePath>
+	</parent>
+	
+	<artifactId>dzah-toolkit</artifactId>
+	<name>dzah-toolkit</name>
+	<description>大杂烩项目使用的工具集</description>
+	
+	<dependencies>
+	
+		<!-- 提供一些基础的、通用的操作和处理，如自动生成toString()的结果、自动实现hashCode()和equals()方法、数组操作、枚举、日期和时间的处理等等 -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+		</dependency>
+		
+		<!-- 提供一个类包来扩展和增加标准的 Java Collection框架 -->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
+		
+	</dependencies>
+	
+	<build />
+</project>

@@ -2,7 +2,9 @@
 <workbench progressCount="13" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="-59" y="80">
-<fastViewData fastViewLocation="1024"/>
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="com.genuitec.eclipse.ast.deploy.core.serverview"/>
+</fastViewData>
 <perspectiveBar>
 <itemSize x="252"/>
 </perspectiveBar>
@@ -27,10 +29,12 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.genuitec.eclipse.hibernate.editor.multipage.hibernatemappingeditor" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.compare.CompareEditor" itemType="typePlaceholder" x="84" y="22"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -57,32 +61,38 @@
 <part id="8"/>
 <part id="9"/>
 <part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HibernateUtil.java" partName="HibernateUtil.java" path="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/util/HibernateUtil.java" title="HibernateUtil.java" tooltip="dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/util/HibernateUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/util/HibernateUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5" selectionTopPixel="396"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventManagerServlet.java" partName="EventManagerServlet.java" path="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/web/EventManagerServlet.java" title="EventManagerServlet.java" tooltip="dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/web/EventManagerServlet.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/web/EventManagerServlet.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2107" selectionTopPixel="792"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventManager.java" partName="EventManager.java" path="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/EventManager.java" title="EventManager.java" tooltip="dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/EventManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/EventManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="1284" selectionTopPixel="1954"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" partName="Person.java" path="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.java" title="Person.java" tooltip="dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1212" selectionTopPixel="1162"/>
+</editor>
+<editor id="com.genuitec.eclipse.hibernate.editor.multipage.hibernatemappingeditor" name="Person.hbm.xml" partName="Person.hbm.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.hbm.xml" title="Person.hbm.xml" tooltip="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.hbm.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.hbm.xml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" partName="web.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/src/main/webapp/WEB-INF/web.xml" title="web.xml" tooltip="dzah-hibernate/src/main/webapp/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-hibernate/src/main/webapp/WEB-INF/web.xml"/>
+</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractDao.java" partName="AbstractDao.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractDao.java" title="AbstractDao.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractDao.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractDao.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="20348" selectionTopPixel="16826"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1971" selectionTopPixel="66"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractService.java" partName="AbstractService.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractService.java" title="AbstractService.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractService.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="264" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SysUser.java" partName="SysUser.java" path="D:/project/personal/myeclipse/git/dzah/dzah-entity/src/main/java/com/ch/wchhuangya/dzah/entity/sys/SysUser.java" title="SysUser.java" tooltip="dzah-entity/src/main/java/com/ch/wchhuangya/dzah/entity/sys/SysUser.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-entity/src/main/java/com/ch/wchhuangya/dzah/entity/sys/SysUser.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1057" selectionTopPixel="660"/>
-</editor>
-<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="dzah-biz/pom.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/pom.xml" title="dzah-biz/pom.xml" tooltip="dzah-biz/pom.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/pom.xml"/>
-</editor>
-<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="dzah-entity/pom.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-entity/pom.xml" title="dzah-entity/pom.xml" tooltip="dzah-entity/pom.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-entity/pom.xml"/>
+<editor id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" name="hibernate.cfg.xml" partName="hibernate.cfg.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/src/main/resources/hibernate.cfg.xml" title="hibernate.cfg.xml" tooltip="dzah-hibernate/src/main/resources/hibernate.cfg.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-hibernate/src/main/resources/hibernate.cfg.xml"/>
 </editor>
 <editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="dzah-toolkit/pom.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-toolkit/pom.xml" title="dzah-toolkit/pom.xml" tooltip="dzah-toolkit/pom.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-toolkit/pom.xml"/>
@@ -90,39 +100,8 @@
 <editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="dzah-parent/pom.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-parent/pom.xml" title="dzah-parent/pom.xml" tooltip="dzah-parent/pom.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-parent/pom.xml"/>
 </editor>
-<editor id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="application.properties" partName="application.properties" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/resources/application.properties" title="application.properties" tooltip="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/resources/application.properties" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/dzah-biz/src/main/resources/application.properties"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSysService.java" partName="TestSysService.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java" title="TestSysService.java" tooltip="dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="847" selectionTopPixel="216"/>
-</editor>
-<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="logback.xml" partName="logback.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/resources/logback.xml" title="logback.xml" tooltip="dzah-biz/src/main/resources/logback.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/main/resources/logback.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Page.java" partName="Page.java" path="D:/project/personal/myeclipse/git/dzah/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Page.java" title="Page.java" tooltip="dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Page.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Page.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1977" selectionTopPixel="66"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Constants.java" partName="Constants.java" path="D:/project/personal/myeclipse/git/dzah/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Constants.java" title="Constants.java" tooltip="dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Constants.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Constants.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="769" selectionTopPixel="106"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SysUserDao.java" partName="SysUserDao.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/dao/SysUserDao.java" title="SysUserDao.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/dao/SysUserDao.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/dao/SysUserDao.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="638" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SysUserService.java" partName="SysUserService.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/SysUserService.java" title="SysUserService.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/SysUserService.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/SysUserService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="599" selectionTopPixel="84"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SysUserServiceImpl.java" partName="SysUserServiceImpl.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/impl/SysUserServiceImpl.java" title="SysUserServiceImpl.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/impl/SysUserServiceImpl.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/impl/SysUserServiceImpl.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1139" selectionTopPixel="304"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractTestCase.java" partName="AbstractTestCase.java" path="D:/project/personal/myeclipse/git/dzah/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java" title="AbstractTestCase.java" tooltip="dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="907" selectionTopPixel="0"/>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="dzah-hibernate/pom.xml" path="D:/project/personal/myeclipse/git/dzah/dzah-hibernate/pom.xml" title="dzah-hibernate/pom.xml" tooltip="dzah-hibernate/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dzah-hibernate/pom.xml"/>
 </editor>
 </editors>
 <views>
@@ -151,8 +130,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="772"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -219,6 +197,9 @@
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 <view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
 </viewState>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
 </view>
 <view id="com.genuitec.eclipse.sqlexplorer.views.TableInfoView" partName="Table/Object Info">
 <viewState/>
@@ -634,7 +615,7 @@
 </mainWindow>
 </layout>
 </perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -678,6 +659,7 @@
 <alwaysOnActionSet id="com.genuitec.eclipse.uml2.ui.actions"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
 <alwaysOnActionSet id="com.genuitec.eclipse.web20.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
@@ -754,13 +736,13 @@
 <view id="org.eclipse.egit.ui.RepositoriesView" ratio="0.29984662"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.genuitec.eclipse.ast.deploy.core.serverview" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
 <view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+<view id="com.genuitec.eclipse.ast.deploy.core.serverview" ratio="0.29833335"/>
 <view id="com.genuitec.eclipse.ui.HTMLView" ratio="0.85"/>
-<view id="com.genuitec.eclipse.ast.deploy.core.serverview" ratio="0.3"/>
 <view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
@@ -772,6 +754,11 @@
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@f24b4d6" orientation="512" selectedTabId="org.eclipse.team.ui.GenericHistoryView" style="0">
 <fastViews>
 <view id="org.eclipse.team.ui.GenericHistoryView" ratio="0.69631904"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@32f70f30" orientation="256" selectedTabId="org.eclipse.debug.ui.DebugView" style="0">
+<fastViews>
+<view id="org.eclipse.debug.ui.DebugView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
@@ -853,6 +840,12 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@32f70f30" ratio="0.5" ratioLeft="652" ratioRight="652" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
 <info folder="true" part="topleft" ratio="0.39933994" ratioLeft="242" ratioRight="364" relationship="4" relative="cvslocation">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
@@ -875,159 +868,137 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractDao.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-entity/src/main/java/com/ch/wchhuangya/dzah/entity/sys/SysUser.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-biz/pom.xml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" path="/dzah-biz/src/main/resources/application.properties"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/dzah-biz/src/main/resources/logback.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Page.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/PreparedStatementSetter.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Constants.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/dao/SysUserDao.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/SysUserService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/impl/SysUserServiceImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/web/EventManagerServlet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" path="/dzah-hibernate/src/main/resources/hibernate.cfg.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/EventManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-hibernate/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-toolkit/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-parent/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-hibernate/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/dzah-hibernate/src/main/webapp/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/TimeHelper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/dzah-hibernate/.project"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-hibernate/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/util/HibernateUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/dzah-parent/pom.xml"/>
 </editors>
-<item historyLabel="application.properties" index="3"/>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="595" y="0"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="4188" y="0"/>
 </item>
-<item historyLabel="SysUser.java" index="1">
-<position info="not_deleted" x="852" y="0"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="3981" y="0"/>
 </item>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="634" y="0"/>
+<item historyLabel="hibernate.cfg.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="2231" y="0"/>
+<item historyLabel="EventManager.java" index="2">
+<position info="not_deleted" x="1284" y="16"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="2906" y="0"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2068" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="2088" y="19"/>
+<item historyLabel="dzah-hibernate/pom.xml" index="3"/>
+<item historyLabel="dzah-toolkit/pom.xml" index="4"/>
+<item historyLabel="dzah-hibernate/pom.xml" index="3"/>
+<item historyLabel="dzah-toolkit/pom.xml" index="4"/>
+<item historyLabel="dzah-parent/pom.xml" index="5"/>
+<item historyLabel="dzah-toolkit/pom.xml" index="4"/>
+<item historyLabel="dzah-hibernate/pom.xml" index="3"/>
+<item historyLabel="dzah-toolkit/pom.xml" index="4"/>
+<item historyLabel="dzah-hibernate/pom.xml" index="3"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2068" y="0"/>
 </item>
-<item historyLabel="logback.xml" index="4"/>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="537" y="0"/>
+<item historyLabel="dzah-hibernate/pom.xml" index="6"/>
+<item historyLabel="web.xml" index="7"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2281" y="0"/>
 </item>
-<item historyLabel="logback.xml" index="4"/>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="537" y="0"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="1728" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="2088" y="19"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="1752" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2175" y="6"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="1752" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="1806" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="1808" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="1909" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="1966" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2109" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2289" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2175" y="47"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2281" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2175" y="47"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2148" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2126" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="4517" y="19"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="4566" y="0"/>
+</item>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2187" y="35"/>
+</item>
+<item historyLabel="TimeHelper.java" index="8">
 <position/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="2053" y="0"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2178" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="22669" y="0"/>
+<item historyLabel="TimeHelper.java" index="8">
+<position info="not_deleted" x="2377" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2107" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="22669" y="0"/>
+<item historyLabel=".project" index="9"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2107" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="5023" y="0"/>
+<item historyLabel="dzah-hibernate/pom.xml" index="10"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="1249" y="0"/>
 </item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="6854" y="4"/>
-</item>
-<item historyLabel="Page.java" index="6">
-<position info="not_deleted" x="1977" y="0"/>
-</item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="14196" y="0"/>
-</item>
-<item historyLabel="PreparedStatementSetter.java" index="7">
-<position info="not_deleted" x="364" y="0"/>
-</item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="14196" y="0"/>
-</item>
-<item historyLabel="dzah-biz/pom.xml" index="2"/>
-<item historyLabel="Constants.java" index="8">
-<position info="not_deleted" x="769" y="0"/>
-</item>
-<item historyLabel="Page.java" index="6">
-<position info="not_deleted" x="1977" y="0"/>
-</item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="14196" y="0"/>
-</item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="16906" y="0"/>
-</item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="20585" y="0"/>
-</item>
-<item historyLabel="AbstractDao.java" index="0">
-<position info="not_deleted" x="20348" y="0"/>
-</item>
-<item historyLabel="SysUserDao.java" index="9">
+<item historyLabel="HibernateUtil.java" index="11">
 <position info="not_deleted" x="5" y="0"/>
 </item>
-<item historyLabel="SysUserDao.java" index="9">
-<position info="not_deleted" x="622" y="0"/>
+<item historyLabel="dzah-parent/pom.xml" index="12"/>
+<item historyLabel="dzah-hibernate/pom.xml" index="10"/>
+<item historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2330" y="0"/>
 </item>
-<item historyLabel="SysUserDao.java" index="9">
-<position info="not_deleted" x="638" y="0"/>
-</item>
-<item historyLabel="SysUserService.java" index="10">
-<position info="not_deleted" x="329" y="0"/>
-</item>
-<item historyLabel="SysUserServiceImpl.java" index="11">
-<position info="not_deleted" x="5" y="0"/>
-</item>
-<item historyLabel="SysUserServiceImpl.java" index="11">
-<position info="not_deleted" x="867" y="0"/>
-</item>
-<item historyLabel="SysUserService.java" index="10">
-<position info="not_deleted" x="599" y="0"/>
-</item>
-<item historyLabel="SysUserServiceImpl.java" index="11">
-<position info="not_deleted" x="867" y="0"/>
-</item>
-<item historyLabel="SysUserServiceImpl.java" index="11">
-<position info="not_deleted" x="1139" y="0"/>
-</item>
-<item historyLabel="SysUserService.java" index="10">
-<position info="not_deleted" x="599" y="0"/>
-</item>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="537" y="0"/>
-</item>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="941" y="0"/>
-</item>
-<item historyLabel="SysUser.java" index="1">
-<position info="not_deleted" x="1057" y="0"/>
-</item>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="941" y="0"/>
-</item>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="685" y="0"/>
-</item>
-<item historyLabel="AbstractTestCase.java" index="12">
-<position info="not_deleted" x="907" y="0"/>
-</item>
-<item historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="634" y="0"/>
-</item>
-<item historyLabel="application.properties" index="3"/>
-<item historyLabel="AbstractTestCase.java" index="12">
-<position info="not_deleted" x="907" y="0"/>
-</item>
-<item active="true" historyLabel="TestSysService.java" index="5">
-<position info="not_deleted" x="634" y="0"/>
+<item historyLabel="dzah-hibernate/pom.xml" index="10"/>
+<item active="true" historyLabel="EventManagerServlet.java" index="0">
+<position info="not_deleted" x="2330" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -1045,6 +1016,7 @@
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@7abc5b69"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@5531e7e8"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@182d75a1"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@32f70f30"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -1058,38 +1030,14 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractTestCase.java" tooltip="dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java">
-<persistable path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/AbstractTestCase.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-hibernate/pom.xml">
+<persistable path="/dzah-hibernate/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SysUserServiceImpl.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/impl/SysUserServiceImpl.java">
-<persistable path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/impl/SysUserServiceImpl.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name=".project" tooltip="dzah-hibernate/.project">
+<persistable path="/dzah-hibernate/.project"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SysUserService.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/SysUserService.java">
-<persistable path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/service/SysUserService.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SysUserDao.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/dao/SysUserDao.java">
-<persistable path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/modules/sys/dao/SysUserDao.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Constants.java" tooltip="dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Constants.java">
-<persistable path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Constants.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PreparedStatementSetter.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/PreparedStatementSetter.java">
-<persistable path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/PreparedStatementSetter.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Page.java" tooltip="dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Page.java">
-<persistable path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/Page.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="logback.xml" tooltip="dzah-biz/src/main/resources/logback.xml">
-<persistable path="/dzah-biz/src/main/resources/logback.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSysService.java" tooltip="dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java">
-<persistable path="/dzah-biz/src/test/java/com/ch/wchhuangya/dzah/test/sys/TestSysService.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="application.properties" tooltip="dzah-biz/src/main/resources/application.properties">
-<persistable path="/dzah-biz/src/main/resources/application.properties"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="CrudRepository.class" tooltip="org.springframework.data.repository.CrudRepository">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=dzah-biz/D:\/maven\/org\/springframework\/data\/spring-data-commons\/1.9.2.RELEASE\/spring-data-commons-1.9.2.RELEASE.jar&lt;org.springframework.data.repository(CrudRepository.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TimeHelper.java" tooltip="dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/TimeHelper.java">
+<persistable path="/dzah-toolkit/src/main/java/com/ch/wchhuangya/dzah/toolkit/TimeHelper.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-parent/pom.xml">
 <persistable path="/dzah-parent/pom.xml"/>
@@ -1097,11 +1045,35 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-toolkit/pom.xml">
 <persistable path="/dzah-toolkit/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-entity/pom.xml">
-<persistable path="/dzah-entity/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" name="hibernate.cfg.xml" tooltip="dzah-hibernate/src/main/resources/hibernate.cfg.xml">
+<persistable path="/dzah-hibernate/src/main/resources/hibernate.cfg.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-biz/pom.xml">
 <persistable path="/dzah-biz/pom.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractDao.java" tooltip="dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractDao.java">
+<persistable path="/dzah-biz/src/main/java/com/ch/wchhuangya/dzah/biz/common/AbstractDao.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="HttpServlet.class" tooltip="javax.servlet.http.HttpServlet">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=dzah-biz/D:\/maven\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/8.0.23\/tomcat-embed-core-8.0.23.jar&lt;javax.servlet.http(HttpServlet.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" tooltip="dzah-hibernate/src/main/webapp/WEB-INF/web.xml">
+<persistable path="/dzah-hibernate/src/main/webapp/WEB-INF/web.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.hibernate.editor.multipage.hibernatemappingeditor" name="Person.hbm.xml" tooltip="dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.hbm.xml">
+<persistable path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.hbm.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" tooltip="dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.java">
+<persistable path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/domain/Person.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventManager.java" tooltip="dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/EventManager.java">
+<persistable path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/EventManager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventManagerServlet.java" tooltip="dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/web/EventManagerServlet.java">
+<persistable path="/dzah-hibernate/src/main/java/com/ch/wchhuangya/dzah/hibernate/web/EventManagerServlet.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="dzah-hibernate1/pom.xml">
+<persistable path="/dzah-hibernate1/pom.xml"/>
 </file>
 </mruList>
 </workbench>
