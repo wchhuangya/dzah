@@ -13,6 +13,11 @@
 	<name>dzah-entity</name>
 	<description>大杂烩项目用到的实体项目</description>
 	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.6</java.version>
+	</properties>
+	
 	<dependencies>
 	
 		<!-- 添加父项目依赖 -->

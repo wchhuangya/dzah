@@ -13,6 +13,11 @@
 	<name>dzah-biz</name>
 	<description>大杂烩项目中处理业务的项目</description>
 	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.6</java.version>
+	</properties>
+	
 	<dependencies>
 		
 		<!-- 项目依赖 -->

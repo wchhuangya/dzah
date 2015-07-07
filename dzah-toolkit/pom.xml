@@ -13,6 +13,11 @@
 	<name>dzah-toolkit</name>
 	<description>大杂烩项目使用的工具集</description>
 	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.6</java.version>
+	</properties>
+	
 	<dependencies>
 	
 		<!-- 提供一些基础的、通用的操作和处理，如自动生成toString()的结果、自动实现hashCode()和equals()方法、数组操作、枚举、日期和时间的处理等等 -->
