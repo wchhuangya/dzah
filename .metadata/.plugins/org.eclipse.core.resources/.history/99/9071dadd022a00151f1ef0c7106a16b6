@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ch.wchhuangya.dzah</groupId>
+		<artifactId>dzah-parent</artifactId>
+		<version>0.0.1</version>
+		<relativePath>../dzah-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>dzah-spring</artifactId>
+	<packaging>war</packaging>
+	<name>dzah-spring Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.6</java.version>
+		<tomcat.version>7.0.56</tomcat.version>
+		<servlet-api.version>3.0.1</servlet-api.version>
+	</properties>
+
+	<dependencies>
+	
+		<dependency>
+			<groupId>com.ch.wchhuangya.dzah</groupId>
+			<artifactId>dzah-toolkit</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ch.wchhuangya.dzah</groupId>
+			<artifactId>dzah-entity</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+
+		<!-- spring framework -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+
+		<!-- hibernate framework -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+		</dependency>
+	        
+        <!-- 数据库连接池BoneCP -->
+        <dependency>
+        	<groupId>com.jolbox</groupId>
+        	<artifactId>bonecp</artifactId>
+        </dependency>
+        
+        <!-- mysql -->
+        <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
+		<!-- 单元测试 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+
+		<!-- slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+		<finalName>dzah-spring</finalName>
+	</build>
+</project>

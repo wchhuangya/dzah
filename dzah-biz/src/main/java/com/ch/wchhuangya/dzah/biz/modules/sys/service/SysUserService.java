@@ -7,6 +7,8 @@
 
 package com.ch.wchhuangya.dzah.biz.modules.sys.service;
 
+import java.util.List;
+
 import com.ch.wchhuangya.dzah.entity.sys.SysUser;
 
 
@@ -30,4 +32,12 @@ public interface SysUserService {
 	 * @throws Exception
 	 */
 	public void saveOrUpdate(SysUser sysUser) throws Exception;
+	/**
+	 * getAllList:获取所有用户列表. <br/> 
+	 * 
+	 * @author wchya 
+	 * @return
+	 * @throws Exception
+	 */
+	public List<SysUser> getAllList() throws Exception;
 }

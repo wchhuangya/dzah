@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+						http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd 
+						http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd 
+						http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd 
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd 
+						http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd http://www.directwebremoting.org/schema/spring-dwr 
+						http://www.directwebremoting.org/schema/spring-dwr-4.0.xsd"
+
+	default-autowire="byName" default-lazy-init="true">
+
+	<!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
+	<context:component-scan base-package="com.ch.wchhuangya.dzah.spring" />
+
+	<!-- SpringContextHolder定义 -->
+	<bean class="com.ch.wchhuangya.dzah.spring.SpringContextHolder" lazy-init="false"/>
+
+	<!-- 定义配置属性 -->
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				<!-- 标准配置 -->
+				<value>classpath*:/jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- 主库  BoneCP 数据源配置-->
+	<bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource"
+			destroy-method="close">
+		<property name="driverClass" value="${jdbc.driverClassName}" />
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="acquireIncrement" value="${bonecp.acquireIncrement}" />
+		<property name="acquireRetryAttempts" value="${bonecp.acquireRetryAttempts}" />
+		<property name="idleMaxAgeInMinutes" value="${bonecp.idleMaxAgeInMinute}" />
+		<property name="idleConnectionTestPeriodInMinutes" value="${bonecp.idleConnectionTestPeriodInMinutes}" />
+		<property name="partitionCount" value="${bonecp.partitionCount}" />
+		<property name="maxConnectionsPerPartition" value="${bonecp.maxConnectionsPerPartition}" />
+		<property name="minConnectionsPerPartition" value="${bonecp.minConnectionsPerPartition}" />
+		<property name="statementsCacheSize" value="${bonecp.statementsCacheSize}" />
+	</bean> 
+ 
+	<!-- Hibernate 配置 -->	         
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" lazy-init="false">
+		<property name="dataSource" ref="dataSource" />
+		<property name="namingStrategy">
+			<bean class="org.hibernate.cfg.ImprovedNamingStrategy" />
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>com.gsww.ioop.entity.modules</value>
+				<value>com.gsww.ioop.bcs.core.workflow.entity</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">  
+        <property name="sessionFactory">  
+            <ref bean="sessionFactory" />  
+        </property>  
+    </bean> 
+
+
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="nativeJdbcExtractor"
+		class="org.springframework.jdbc.support.nativejdbc.CommonsDbcpNativeJdbcExtractor"
+		lazy-init="true" />
+	<bean id="oracleLobHandler" class="org.springframework.jdbc.support.lob.OracleLobHandler"
+		lazy-init="true">
+		<property name="nativeJdbcExtractor" ref="nativeJdbcExtractor" />
+	</bean>
+
+	<!-- 异步线程池 -->  
+	<bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<property name="corePoolSize" value="3" />  
+		<property name="maxPoolSize" value="10" />
+		<property name="queueCapacity" value="10" />
+		<property name="keepAliveSeconds" value="300" />
+		<property name="rejectedExecutionHandler">   
+	    	<bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />  
+	    </property>    
+	</bean>
+ 	
+	<!-- 事务管理器配置 -->
+	<bean id="transactionManager"   
+            class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />  
+    </bean>  
+    
+    <tx:annotation-driven transaction-manager="transactionManager"  proxy-target-class="true" order="2"/>
+	<tx:advice id="transactionManagerAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="query*" read-only="true" />
+			<tx:method name="fuzzy*" read-only="true" />
+			<tx:method name="is*" read-only="true" />
+			<tx:method name="saveExceptionLog" propagation="REQUIRES_NEW" />
+			<tx:method name="*" rollback-for="java.lang.Exception" />
+		</tx:attributes>
+	</tx:advice>
+	 
+	<!-- 切面日志 --> 
+	<bean id="aspectBean" class="com.gsww.ioop.bcs.core.aop.LogAspect" />
+	<aop:config proxy-target-class="true">
+		<aop:aspect id="aspect" ref="aspectBean" order="1"> 
+			<!--配置com.gsww.ioop.bcs.core.modules 下 service层 所有业务类的所有方法 -->
+			<aop:pointcut id="logPointCut"
+				expression="within(com.gsww.ioop.bcs.core.commons.AbstractService+) and @annotation(com.gsww.ioop.bcs.core.aop.LogAnnotation)" />
+				<!--
+				expression="execution(* com.gsww.ioop.bcs.core.modules.*.service.*.*(..)) and !within(com.gsww.ioop.bcs.core.modules.log..*)" />
+				-->
+			<aop:after-returning pointcut-ref="logPointCut" method="afterReturning"/>
+			<aop:after-throwing pointcut-ref="logPointCut" throwing="ex"  method="afterThrowing" />
+		</aop:aspect>
+	</aop:config>
+	
+	<!-- 系统配置 -->
+	<bean id="sysConfig" class="com.gsww.ioop.bcs.core.commons.sysconfig.impl.SysConfigConstantImpl" />
+</beans>
