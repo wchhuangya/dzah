@@ -23,12 +23,12 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml"/>
 			<item value="D:\project\personal\myeclipse\git\dzah\dzah-hibernate1"/>
 			<item value="D:\project\personal\myeclipse\git\dzah\dzah-hibernate"/>
 			<item value="D:\project\personal\myeclipse\git\dzah\dzah-parent"/>
 			<item value="D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml"/>
 			<item value="D:\project\personal\myeclipse\git\dzah\all-parent\pom.xml"/>
-			<item value="D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -50,10 +50,12 @@
 			<item value="wer"/>
 		</list>
 		<list key="package">
+			<item value="com.ch.wchhuangya.dzah.test"/>
 			<item value="com.ch.wchhuangya.dzah.hibernate"/>
 			<item value="foo"/>
 		</list>
 		<list key="artifactId">
+			<item value="dzah-test"/>
 			<item value="dzah-hibernate"/>
 			<item value="43ds"/>
 		</list>

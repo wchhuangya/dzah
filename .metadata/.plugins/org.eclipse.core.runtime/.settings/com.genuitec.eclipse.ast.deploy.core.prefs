@@ -1,0 +1,14 @@
+#Tue Jul 14 09:03:15 CST 2015
+tomcat7Server.dzah-spring.shouldOverwrite=false
+tomcat7Server.dzah-spring.type=WebDeployment
+tomcat7Server.dzah-spring.isExploded=true
+tomcat7Server.dzah-spring.deployIsOverProject=false
+tomcat7Server.dzah-spring.IEARProjectName=
+tomcat7Server.dzah-spring.isUptoDate=true
+tomcat7Server.dzah-spring.altContextRoot=
+tomcat7Server.dzah-spring.deploymentPath=D\:\\apache-tomcat-7.0.52-2\\webapps\\dzah-spring
+eclipse.preferences.version=1
+tomcat7Server.dzah-spring.isDeployed=true
+tomcat7Server.dzah-spring.noFileCopy=false
+tomcat7Server.dzah-spring.shouldBackup=false
+tomcat7Server.dzah-spring.contextRoot=/dzah-spring

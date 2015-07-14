@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.ch.wchhuangya.dzah</groupId>
+	<artifactId>dzah-parent</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+
+	<name>dzah-parent</name>
+	<description>大杂烩下所有项目的父项目，引入spring-boot${spring.boot.version}版本</description>
+	
+	<modules>
+		<module>../dzah-toolkit/pom.xml</module>
+		<module>../dzah-entity/pom.xml</module>
+		<module>../dzah-biz/pom.xml</module>
+		<module>../dzah-hibernate/pom.xml</module>
+		<module>../dzah-spring/pom.xml</module>
+	</modules>
+
+	<properties>
+		<spring.boot.version>1.2.4.RELEASE</spring.boot.version>
+		<java.version>1.7</java.version>
+    	<tomcat.version>7.0.56</tomcat.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+		
+			<!-- 引入Spring Boot的依赖管理 -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring.boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>javax.transaction</groupId>
+						<artifactId>javax.transaction-api</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			
+			<!-- 提供一些基础的、通用的操作和处理，如自动生成toString()的结果、自动实现hashCode()和equals()方法、数组操作、枚举、日期和时间的处理等等 -->
+	    	<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.6</version>
+			</dependency>
+			
+			<!-- 提供一个类包来扩展和增加标准的 Java Collection框架 -->
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>3.2.1</version>
+			</dependency>
+			
+			<!-- 用于在数据对象模型上使用注解来完成getter等方法的自动生成 -->
+	        <dependency>
+	            <groupId>org.projectlombok</groupId>
+	            <artifactId>lombok</artifactId>
+	            <version>1.16.4</version>
+	            <scope>provided</scope>
+	        </dependency>
+	        
+	        <!-- 数据库连接池BoneCP -->
+	        <dependency>
+	        	<groupId>com.jolbox</groupId>
+	        	<artifactId>bonecp</artifactId>
+	        	<version>0.8.0.RELEASE</version>
+	        </dependency>
+	        
+	        <dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.35</version>
+			</dependency>
+			
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+		    <plugins>
+		    
+		    	<!-- 可以把项目打成一个可执行jar包的插件 -->
+		        <plugin>
+		            <groupId>org.springframework.boot</groupId>
+		            <artifactId>spring-boot-maven-plugin</artifactId>
+            		<version>1.2.2.RELEASE</version>
+		        </plugin>
+		        
+		    </plugins>
+	    </pluginManagement>
+	</build>
+</project>

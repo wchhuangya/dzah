@@ -11170,3 +11170,999 @@ org.eclipse.jface.text.BadLocationException: null
 2015-07-09 17:34:27,217 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2015-07-09 17:34:27,224 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-07-09 17:34:27,224 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-09 18:04:56,445 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-09 18:04:56,854 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-09 18:04:56,855 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-09 18:04:56,857 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-09 18:04:56,857 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-09 18:04:56,965 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-09 18:04:57,132 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-09 18:04:57,132 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-09 18:04:57,133 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-09 18:04:57,133 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-10 08:45:02,740 [Worker-11] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2015-07-10 08:45:04,591 [Worker-11] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo1.maven.org/maven2
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.checkError(AsyncFetcher.java:253) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.read(AsyncFetcher.java:261) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at java.io.PipedInputStream.read(PipedInputStream.java:361) ~[na:1.6.0_13]
+	at java.io.InputStream.read(InputStream.java:85) ~[na:1.6.0_13]
+	at java.util.Properties$LineReader.readLine(Properties.java:418) ~[na:1.6.0_13]
+	at java.util.Properties.load0(Properties.java:337) ~[na:1.6.0_13]
+	at java.util.Properties.load(Properties.java:325) ~[na:1.6.0_13]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:457) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:607) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:788) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1126) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1083) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:660) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:71) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$MonitorListener.onStatus(AsyncFetcher.java:283) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.fireStatus(SimpleAsyncHttpClient.java:828) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.onStatusReceived(SimpleAsyncHttpClient.java:779) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.updateStatusAndInterrupt(NettyAsyncHttpProvider.java:1439) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.messageReceived(NettyAsyncHttpProvider.java:1170) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:148) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:104) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:302) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.unfoldAndfireMessageReceived(ReplayingDecoder.java:522) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:506) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:443) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:77) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:540) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200) ~[na:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[na:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) ~[na:1.6.0_13]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) ~[na:1.6.0_13]
+	at java.lang.Thread.run(Thread.java:619) ~[na:1.6.0_13]
+2015-07-10 08:45:22,914 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-10 08:45:22,924 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-10 08:45:22,932 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-10 08:45:22,933 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-10 08:45:23,290 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-10 08:45:23,290 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-10 08:45:23,297 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-10 08:45:23,298 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-10 08:45:25,771 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-10 08:45:25,773 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-10 08:45:25,780 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-10 08:45:25,781 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-10 08:45:25,929 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-10 08:45:25,929 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-10 08:45:25,933 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-10 08:45:25,933 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-10 08:45:27,063 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-10 08:45:27,064 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-10 08:45:27,066 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-10 08:45:27,066 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-10 08:51:34,645 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-10 08:51:34,648 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-10 08:51:34,650 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-10 08:51:34,650 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 08:44:56,955 [Worker-3] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2015-07-13 08:44:58,387 [Worker-3] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo1.maven.org/maven2
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.checkError(AsyncFetcher.java:253) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.read(AsyncFetcher.java:261) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at java.io.PipedInputStream.read(PipedInputStream.java:361) ~[na:1.6.0_13]
+	at java.io.InputStream.read(InputStream.java:85) ~[na:1.6.0_13]
+	at java.util.Properties$LineReader.readLine(Properties.java:418) ~[na:1.6.0_13]
+	at java.util.Properties.load0(Properties.java:337) ~[na:1.6.0_13]
+	at java.util.Properties.load(Properties.java:325) ~[na:1.6.0_13]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:457) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:607) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:788) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1126) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1083) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:660) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:71) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$MonitorListener.onStatus(AsyncFetcher.java:283) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.fireStatus(SimpleAsyncHttpClient.java:828) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.onStatusReceived(SimpleAsyncHttpClient.java:779) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.updateStatusAndInterrupt(NettyAsyncHttpProvider.java:1439) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.messageReceived(NettyAsyncHttpProvider.java:1170) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:148) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:104) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:302) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.unfoldAndfireMessageReceived(ReplayingDecoder.java:522) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:506) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:443) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:77) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:540) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200) ~[na:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[na:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) ~[na:1.6.0_13]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) ~[na:1.6.0_13]
+	at java.lang.Thread.run(Thread.java:619) ~[na:1.6.0_13]
+2015-07-13 08:45:12,797 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 08:45:12,804 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 08:45:12,812 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 08:45:12,814 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 08:45:14,257 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 08:45:14,257 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 08:45:14,258 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 08:45:14,258 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 08:45:14,865 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 08:45:14,866 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 08:45:14,868 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 08:45:14,868 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 08:45:15,008 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 08:45:15,008 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 08:45:15,010 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 08:45:15,011 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 08:45:16,559 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 08:45:16,560 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 08:45:16,562 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 08:45:16,562 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 14:34:29,136 [Worker-6] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2015-07-13 14:34:30,080 [Worker-6] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo1.maven.org/maven2
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.checkError(AsyncFetcher.java:253) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.read(AsyncFetcher.java:261) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at java.io.PipedInputStream.read(PipedInputStream.java:361) ~[na:1.6.0_13]
+	at java.io.InputStream.read(InputStream.java:85) ~[na:1.6.0_13]
+	at java.util.Properties$LineReader.readLine(Properties.java:418) ~[na:1.6.0_13]
+	at java.util.Properties.load0(Properties.java:337) ~[na:1.6.0_13]
+	at java.util.Properties.load(Properties.java:325) ~[na:1.6.0_13]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:457) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:607) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:788) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1126) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1083) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:660) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:71) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$MonitorListener.onStatus(AsyncFetcher.java:283) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.fireStatus(SimpleAsyncHttpClient.java:828) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.onStatusReceived(SimpleAsyncHttpClient.java:779) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.updateStatusAndInterrupt(NettyAsyncHttpProvider.java:1439) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.messageReceived(NettyAsyncHttpProvider.java:1170) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:148) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:104) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:302) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.unfoldAndfireMessageReceived(ReplayingDecoder.java:522) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:506) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:443) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:77) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:540) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200) ~[na:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[na:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) ~[na:1.6.0_13]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) ~[na:1.6.0_13]
+	at java.lang.Thread.run(Thread.java:619) ~[na:1.6.0_13]
+2015-07-13 14:34:39,245 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 14:34:39,250 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 14:34:39,257 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 14:34:39,258 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 14:34:39,610 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:34:39,610 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 14:34:39,612 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:34:39,612 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 14:34:40,062 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:34:40,063 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 14:34:40,066 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:34:40,066 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 14:34:40,162 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:34:40,162 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 14:34:40,164 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:34:40,164 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 14:34:40,664 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:34:40,665 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 14:34:40,666 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:34:40,667 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 14:46:33,809 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 14:46:34,314 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 14:46:34,317 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 14:46:34,318 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 14:46:34,319 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 14:47:12,715 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 14:47:13,083 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:47:13,084 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 14:47:13,085 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:47:13,085 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 14:47:22,291 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-spring
+2015-07-13 14:47:22,292 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml clean
+2015-07-13 14:55:14,183 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 14:55:14,498 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:55:14,500 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 14:55:14,502 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:55:14,503 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 14:55:23,493 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 14:55:23,833 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:55:23,833 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 14:55:23,834 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:55:23,834 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 14:55:32,887 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-spring
+2015-07-13 14:55:32,887 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml clean
+2015-07-13 14:58:12,696 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 14:58:13,042 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:58:13,044 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 14:58:13,046 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 14:58:13,046 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 14:58:26,692 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-spring
+2015-07-13 14:58:26,692 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml clean
+2015-07-13 15:01:45,092 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:01:45,425 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:01:45,428 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 15:01:45,431 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:01:45,431 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 15:01:54,531 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:01:54,855 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:01:54,856 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 15:01:54,857 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:01:54,857 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 15:02:01,157 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 15:02:01,179 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 15:02:01,217 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 15:02:01,485 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 15:02:01,515 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 15:02:01,535 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:02:01,971 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:01,971 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 15:02:01,973 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:01,973 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 15:02:01,982 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:01,982 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 15:02:01,982 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:01,983 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 15:02:01,999 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:01,999 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 15:02:02,000 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:02,000 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 15:02:02,008 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:02,008 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 15:02:02,010 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:02,010 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 15:02:02,018 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:02,018 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 15:02:02,020 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:02:02,020 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 15:02:11,018 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-spring
+2015-07-13 15:02:11,018 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml clean
+2015-07-13 15:02:29,096 [Worker-6] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-spring
+2015-07-13 15:02:29,096 [Worker-6] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml clean install
+2015-07-13 15:47:27,562 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:47:28,069 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:28,069 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 15:47:28,072 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:28,072 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 15:47:34,834 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:47:35,921 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:35,921 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 15:47:35,923 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:35,923 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 15:47:55,558 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 15:47:55,575 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 15:47:55,877 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 15:47:55,903 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 15:47:55,924 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 15:47:55,972 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:47:56,395 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:47:56,597 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:56,597 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 15:47:56,599 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:56,599 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 15:47:57,163 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 15:47:57,226 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:57,226 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 15:47:57,227 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:57,227 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 15:47:58,006 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 15:47:58,141 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:58,141 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 15:47:58,165 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:58,165 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 15:47:58,459 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 15:47:59,297 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:59,297 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 15:47:59,301 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:47:59,301 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 15:48:00,139 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 15:48:00,769 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:00,769 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 15:48:00,773 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:00,773 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 15:48:07,867 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 15:48:07,883 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:48:08,007 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 15:48:08,031 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 15:48:08,081 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 15:48:08,104 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 15:48:08,540 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 15:48:08,708 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:08,709 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 15:48:08,711 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:08,711 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 15:48:08,800 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 15:48:08,843 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:08,843 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 15:48:08,843 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:08,844 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 15:48:08,989 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 15:48:09,103 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:09,104 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 15:48:09,108 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:09,109 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 15:48:09,181 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 15:48:09,261 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:09,261 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 15:48:09,262 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:09,262 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 15:48:09,525 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 15:48:09,932 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:09,933 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 15:48:10,230 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 15:48:10,230 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 16:07:49,076 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:07:49,418 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:07:49,419 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:07:49,420 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:07:49,420 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:08:50,229 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:08:50,479 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:08:50,479 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:08:50,480 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:08:50,480 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:16:19,194 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 16:16:19,211 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:16:19,240 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 16:16:19,323 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 16:16:19,349 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 16:16:19,568 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:16:19,942 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:16:20,147 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:20,147 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 16:16:20,150 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:20,150 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:16:20,236 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:16:20,273 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:20,273 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 16:16:20,274 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:20,274 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 16:16:20,397 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 16:16:20,496 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:20,497 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 16:16:20,500 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:20,500 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 16:16:20,557 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 16:16:20,668 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:20,669 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 16:16:20,669 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:20,669 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 16:16:20,853 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 16:16:21,208 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:21,209 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 16:16:21,211 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:21,211 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 16:16:47,581 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:47,582 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 16:16:47,585 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:16:47,585 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 16:18:30,350 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,350 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:18:30,351 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,351 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:18:30,360 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,360 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 16:18:30,360 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,360 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 16:18:30,373 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,373 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:18:30,374 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,374 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 16:18:30,380 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,380 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 16:18:30,381 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,381 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 16:18:30,388 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,389 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:18:30,389 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:30,389 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 16:18:31,441 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:31,442 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:18:31,443 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:31,443 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:18:37,503 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 16:18:37,521 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:18:37,642 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:18:37,664 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 16:18:37,712 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 16:18:37,731 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 16:18:38,284 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:18:38,522 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:38,522 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 16:18:38,523 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:38,523 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:18:38,597 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:18:38,636 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:38,636 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 16:18:38,637 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:38,637 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 16:18:38,764 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 16:18:38,871 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:38,872 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 16:18:38,876 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:38,877 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 16:18:38,994 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 16:18:39,083 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:39,083 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 16:18:39,084 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:39,084 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 16:18:39,352 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 16:18:39,683 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:39,683 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 16:18:39,686 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:18:39,686 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 16:29:47,065 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 16:29:47,302 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 16:29:47,324 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 16:29:47,359 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 16:29:47,379 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:29:47,412 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:29:48,268 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,269 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:29:48,270 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,270 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:29:48,288 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,288 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 16:29:48,289 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,289 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 16:29:48,308 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,308 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:29:48,309 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,309 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 16:29:48,319 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,320 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 16:29:48,320 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,321 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 16:29:48,334 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,334 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:29:48,335 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:48,335 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 16:29:49,484 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:49,484 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:29:49,485 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:49,485 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:29:55,278 [Worker-3] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2015-07-13 16:29:55,328 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 16:29:55,707 [Worker-3] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 1.6
+2015-07-13 16:29:55,707 [Worker-3] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 1.6
+2015-07-13 16:29:55,711 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dzah-biz/src/main/java
+2015-07-13 16:29:55,716 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dzah-biz/src/main/resources
+2015-07-13 16:29:55,718 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dzah-biz/src/test/java
+2015-07-13 16:29:55,841 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 16:29:55,928 [Worker-3] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 1.5
+2015-07-13 16:29:55,929 [Worker-3] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 1.5
+2015-07-13 16:29:55,933 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dzah-entity/src/main/java
+2015-07-13 16:29:56,012 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 16:29:56,165 [Worker-3] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 1.6
+2015-07-13 16:29:56,166 [Worker-3] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 1.6
+2015-07-13 16:29:56,170 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dzah-hibernate/src/main/java
+2015-07-13 16:29:56,170 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /dzah-hibernate/src/main/java overlaps with sources folder /dzah-hibernate/src/main/java
+2015-07-13 16:29:56,517 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 16:29:56,531 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:29:56,558 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:29:56,734 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 16:29:56,910 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 16:29:56,967 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 16:29:57,248 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:29:57,542 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dzah-spring/src/main/java
+2015-07-13 16:29:57,544 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dzah-spring/src/main/resources
+2015-07-13 16:29:57,703 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:29:57,750 [Worker-3] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 1.6
+2015-07-13 16:29:57,752 [Worker-3] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 1.6
+2015-07-13 16:29:57,755 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dzah-toolkit/src/main/java
+2015-07-13 16:29:57,785 [Worker-3] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 2 sec
+2015-07-13 16:29:58,564 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:29:58,804 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:58,804 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 16:29:58,807 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:58,807 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:29:58,911 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:29:58,953 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:58,953 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 16:29:58,957 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:58,957 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 16:29:59,026 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:59,027 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 16:29:59,029 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:59,029 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 16:29:59,057 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:59,057 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 16:29:59,059 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:59,059 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 16:29:59,258 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:59,258 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-13 16:29:59,260 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:29:59,261 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 16:46:37,332 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 16:46:37,350 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 16:46:37,638 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 16:46:37,661 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 16:46:37,689 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:46:37,719 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:46:38,224 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,225 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:46:38,226 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,226 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:46:38,270 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:46:38,311 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,311 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 16:46:38,312 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,312 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 16:46:38,324 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,324 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:46:38,325 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,325 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 16:46:38,333 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,333 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 16:46:38,334 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,334 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 16:46:38,341 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,342 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:46:38,342 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:38,342 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 16:46:44,899 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 16:46:45,204 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:45,204 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 16:46:45,205 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:45,205 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 16:46:56,420 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 16:46:56,460 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:56,460 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 16:46:56,460 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 16:46:56,460 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 17:19:28,275 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 17:19:28,488 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:19:28,489 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:19:28,490 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:19:28,490 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 17:36:02,883 [Worker-31] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 17:36:03,292 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:36:03,292 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:36:03,294 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:36:03,294 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 17:36:04,518 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:36:04,519 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 17:36:04,521 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:36:04,522 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 17:36:05,574 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:36:05,575 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:36:05,576 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:36:05,576 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 17:36:43,954 [Worker-31] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 17:36:44,497 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:36:44,497 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:36:44,498 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:36:44,498 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 17:37:25,565 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-parent
+2015-07-13 17:37:25,565 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml clean
+2015-07-13 17:37:55,356 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-parent
+2015-07-13 17:37:55,357 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml install
+2015-07-13 17:41:58,992 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 17:41:59,010 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 17:41:59,333 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 17:41:59,358 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 17:41:59,402 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 17:41:59,420 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 17:42:00,652 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,652 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:42:00,653 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,653 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 17:42:00,663 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,663 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 17:42:00,664 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,664 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 17:42:00,675 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,675 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:42:00,676 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,676 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 17:42:00,684 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,684 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 17:42:00,686 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,686 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 17:42:00,697 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,697 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:42:00,697 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:42:00,697 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 17:42:23,717 [Worker-39] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-parent
+2015-07-13 17:42:23,717 [Worker-39] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml clean
+2015-07-13 17:42:38,529 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\project\personal\myeclipse\git\dzah\dzah-parent
+2015-07-13 17:42:38,529 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\apache-maven-3.2.5\conf\settings.xml install
+2015-07-13 17:51:51,070 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:51:51,071 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-13 17:51:51,073 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:51:51,073 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 17:54:33,107 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 17:54:33,282 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:33,282 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 17:54:33,283 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:33,283 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 17:54:43,219 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-13 17:54:43,232 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-13 17:54:43,499 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-13 17:54:43,515 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-13 17:54:43,540 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 17:54:43,561 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-13 17:54:44,279 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,279 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:54:44,279 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,279 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 17:54:44,287 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,287 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-13 17:54:44,288 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,288 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-13 17:54:44,297 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,298 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:54:44,298 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,299 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-13 17:54:44,310 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,310 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-13 17:54:44,310 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,310 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-13 17:54:44,321 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,321 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:54:44,322 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:44,322 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-13 17:54:56,962 [Worker-41] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-13 17:54:57,156 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:57,156 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 17:54:57,157 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 17:54:57,157 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-13 18:00:47,450 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml
+2015-07-13 18:00:47,549 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test Maven Webapp\pom.xml.
+2015-07-13 18:00:47,760 [Worker-40] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 
+2015-07-13 18:00:47,761 [Worker-40] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 
+2015-07-13 18:00:47,765 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dzah-test Maven Webapp/src/main/resources
+2015-07-13 18:00:48,088 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 0 sec
+2015-07-13 18:00:48,090 [Worker-40] ERROR org.eclipse.m2e.core.MavenPlugin - 
+org.eclipse.jdt.core.JavaModelException: dzah-test does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2305) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1890) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1912) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.m2e.core.MavenResourceProcessor.doCheck(MavenResourceProcessor.java:94) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.MavenResourceProcessor.checkforOlderMaven(MavenResourceProcessor.java:69) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:84) [org.eclipse.m2e.core.ui_1.0.0.me201110311918.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstactCreateMavenProjectJob.runInWorkspace(AbstactCreateMavenProjectJob.java:49) [org.eclipse.m2e.core.ui_1.0.0.me201110311918.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38) [org.eclipse.core.resources_3.7.100.v20110510-0712.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+2015-07-13 18:00:48,857 [Worker-41] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test Maven Webapp\pom.xml.
+2015-07-13 18:00:49,039 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:00:49,040 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:00:49,041 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:00:49,042 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test Maven Webapp\src\test\resources
+2015-07-13 18:00:58,714 [Worker-43] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:01:06,372 [Worker-46] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:01:06,428 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:01:06,429 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:01:06,430 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:01:06,430 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:02:22,499 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:02:22,530 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:02:22,531 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:02:22,531 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:02:22,532 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:02:39,706 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:02:39,734 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:02:39,735 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:02:39,736 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:02:39,737 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:03:21,794 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:03:21,963 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:03:21,964 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:03:21,965 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:03:21,965 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:03:40,484 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:03:41,272 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:03:41,272 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:03:41,273 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:03:41,274 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:03:56,584 [Worker-46] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:03:56,740 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:03:56,741 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:03:56,742 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:03:56,742 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:05:16,773 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:05:16,934 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:05:16,935 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:05:16,936 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:05:16,936 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:05:46,082 [Worker-46] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:05:46,115 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:05:46,116 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:05:46,117 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:05:46,118 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:06:47,439 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:06:47,664 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:06:47,665 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:06:47,666 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-13 18:06:47,667 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-13 18:07:04,209 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-test:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-test\pom.xml.
+2015-07-13 18:07:04,454 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 18:07:04,455 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-13 18:07:04,456 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-13 18:07:04,456 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-test\src\test\resources
+2015-07-14 08:38:40,529 [Worker-2] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2015-07-14 08:38:42,289 [Worker-2] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo1.maven.org/maven2
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.checkError(AsyncFetcher.java:253) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.read(AsyncFetcher.java:261) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at java.io.PipedInputStream.read(PipedInputStream.java:361) ~[na:1.6.0_13]
+	at java.io.InputStream.read(InputStream.java:85) ~[na:1.6.0_13]
+	at java.util.Properties$LineReader.readLine(Properties.java:418) ~[na:1.6.0_13]
+	at java.util.Properties.load0(Properties.java:337) ~[na:1.6.0_13]
+	at java.util.Properties.load(Properties.java:325) ~[na:1.6.0_13]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:457) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:607) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:788) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1126) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1083) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:660) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:71) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$MonitorListener.onStatus(AsyncFetcher.java:283) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.fireStatus(SimpleAsyncHttpClient.java:828) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.onStatusReceived(SimpleAsyncHttpClient.java:779) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.updateStatusAndInterrupt(NettyAsyncHttpProvider.java:1439) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.messageReceived(NettyAsyncHttpProvider.java:1170) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:148) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:104) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:302) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.unfoldAndfireMessageReceived(ReplayingDecoder.java:522) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:506) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:443) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:77) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:540) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200) ~[na:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[na:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) ~[na:1.6.0_13]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) ~[na:1.6.0_13]
+	at java.lang.Thread.run(Thread.java:619) ~[na:1.6.0_13]
+2015-07-14 08:38:52,339 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:52,350 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-14 08:38:52,373 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:52,373 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 08:38:53,442 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:53,458 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 08:38:53,461 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:53,461 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 08:38:54,112 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:54,112 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-14 08:38:54,116 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:54,145 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-14 08:38:55,171 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:55,173 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-14 08:38:55,178 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:55,178 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-14 08:38:55,807 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:55,807 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-14 08:38:55,808 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:55,809 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-14 08:38:56,738 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:56,739 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-14 08:38:56,742 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:38:56,742 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-14 08:43:38,152 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:43:38,157 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-14 08:43:38,159 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:43:38,159 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 08:45:42,912 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,913 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 08:45:42,918 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,918 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 08:45:42,932 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,933 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-14 08:45:42,934 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,935 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-14 08:45:42,962 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,962 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 08:45:42,963 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,963 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-14 08:45:42,977 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,978 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-14 08:45:42,979 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,979 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-14 08:45:42,990 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,991 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 08:45:42,992 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:45:42,992 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-14 08:46:03,860 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,860 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 08:46:03,861 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,862 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 08:46:03,870 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,870 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-14 08:46:03,872 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,872 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-14 08:46:03,888 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,889 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 08:46:03,890 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,890 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-14 08:46:03,899 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,899 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-14 08:46:03,902 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,902 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-14 08:46:03,915 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,915 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 08:46:03,917 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:46:03,917 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-14 08:59:58,548 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 08:59:59,541 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:59:59,541 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 08:59:59,542 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 08:59:59,542 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 09:00:29,000 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-14 09:00:29,026 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-14 09:00:29,540 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-14 09:00:29,584 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-14 09:00:29,615 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-14 09:00:29,676 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:00:30,970 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:00:31,257 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:31,258 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-14 09:00:31,261 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:31,261 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 09:00:31,530 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:31,531 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 09:00:31,533 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:31,533 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 09:00:32,968 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-14 09:00:33,077 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:33,077 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-14 09:00:33,079 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:33,079 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-14 09:00:33,524 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-14 09:00:33,819 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:33,821 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-14 09:00:33,841 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:33,841 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-14 09:00:34,089 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:34,090 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 09:00:34,092 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:34,092 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-14 09:00:34,286 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-14 09:00:34,470 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:34,470 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-14 09:00:34,471 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:34,472 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-14 09:00:35,146 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-14 09:00:35,666 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:35,667 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-07-14 09:00:35,688 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:00:35,688 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-14 09:01:32,606 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:01:33,751 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:01:33,752 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 09:01:33,754 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:01:33,754 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 09:01:37,935 [Worker-28] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2015-07-14 09:01:37,988 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:01:38,310 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dzah-spring/src/main/java
+2015-07-14 09:01:38,312 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dzah-spring/src/main/resources
+2015-07-14 09:01:39,415 [Worker-28] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 1 sec
+2015-07-14 09:01:39,664 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:01:39,967 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:01:39,968 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-14 09:01:39,973 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:01:39,973 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 09:02:26,602 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:02:26,867 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:26,867 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 09:02:26,869 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:26,869 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 09:02:37,490 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-parent:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-parent\pom.xml.
+2015-07-14 09:02:37,513 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-14 09:02:37,550 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-hibernate:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-hibernate\pom.xml.
+2015-07-14 09:02:37,640 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-entity:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-entity\pom.xml.
+2015-07-14 09:02:37,671 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-biz:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-biz\pom.xml.
+2015-07-14 09:02:37,966 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:02:38,500 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,500 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 09:02:38,501 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,502 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources
+2015-07-14 09:02:38,515 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,515 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-14 09:02:38,517 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,517 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-14 09:02:38,531 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,531 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 09:02:38,532 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,532 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-hibernate\src\test\resources
+2015-07-14 09:02:38,542 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,542 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\main\resources
+2015-07-14 09:02:38,544 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,544 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-entity\src\test\resources
+2015-07-14 09:02:38,556 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,556 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-14 09:02:38,559 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:38,559 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-biz\src\test\resources
+2015-07-14 09:02:48,647 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-toolkit:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-toolkit\pom.xml.
+2015-07-14 09:02:48,748 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:48,748 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\main\resources
+2015-07-14 09:02:48,749 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:02:48,749 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-toolkit\src\test\resources
+2015-07-14 09:03:01,136 [Worker-30] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2015-07-14 09:03:01,187 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:03:01,502 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dzah-spring/src/main/java
+2015-07-14 09:03:01,503 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dzah-spring/src/main/resources
+2015-07-14 09:03:01,845 [Worker-30] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 0 sec
+2015-07-14 09:03:02,699 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ch.wchhuangya.dzah:dzah-spring:0.0.1 @ D:\project\personal\myeclipse\git\dzah\dzah-spring\pom.xml.
+2015-07-14 09:03:03,035 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:03:03,036 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-07-14 09:03:03,040 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-14 09:03:03,040 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\project\personal\myeclipse\git\dzah\dzah-spring\src\test\resources

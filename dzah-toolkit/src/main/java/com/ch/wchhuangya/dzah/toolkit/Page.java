@@ -50,7 +50,8 @@ public class Page  implements Serializable {
     /**
      * 构造方法，只构造空页
      */
-    public Page() {
+    @SuppressWarnings("rawtypes")
+	public Page() {
         this(0, 0, DEFAULT_PAGE_SIZE, new ArrayList());
     }
 
